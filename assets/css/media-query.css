@@ -1,0 +1,2738 @@
+@media(min-width:1200px) {
+    .container {
+        max-width: 1314px;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (min-width:1660px) and (max-width:1900px) {
+    #video-wrap .video-container {
+        max-width: 978px;
+    }
+
+    .nav-social-icons {
+        padding: 15px 0 10px;
+    }
+
+    .muri-copyright {
+        padding: 0 30px 20px;
+    }
+
+    .muri-pro-pic {
+        width: auto;
+        height: 250px;
+        left: -28px;
+        top: -13px;
+        position: relative;
+    }
+
+    .portfolio-logo .muri-logo {
+        height: 30px;
+        width: auto;
+    }
+
+    .murillo-logo {
+        padding: 12px 25px 10px;
+    }
+
+    .muri-contact-title {
+        padding: 0 0 12px;
+    }
+
+    .muri-navbar-link {
+        padding: 5px 0;
+    }
+}
+
+@media(max-width:1659px) and (min-width:1330px) {
+    #video-wrap .video-container {
+        max-width: 1431px;
+    }
+
+    .muri-prof-img span {
+        padding: 6px 0 0 22px;
+    }
+
+    .profile-img-col {
+        justify-content: flex-start!important;
+        flex-direction: row!important;
+    }
+
+    .service-row-one {
+        padding: 60px 0 0;
+    }
+
+    .muri-contact {
+        padding: 10px 30px 0;
+    }
+
+    .muri-copyright {
+        padding: 10px 30px 6px;
+    }
+
+    .nav-social-icons {
+        padding: 15px 0 10px;
+    }
+
+    .muri-pro-pic {
+        width: auto;
+        height: 250px;
+    }
+
+    .muri-contact-title {
+        padding: 0 0 12px;
+    }
+
+    .murillo-logo {
+        padding: 10px 25px 10px;
+    }
+
+    .muri-navbar-link {
+        padding: 5px 0;
+    }
+}
+
+@media(max-width:1500px) {
+    .muri-sidebar,.muri-sidebar .back-color-shape {
+        width: 360px;
+    }
+
+    .main-wrapper {
+        margin-left: 360px;
+    }
+
+    .muri-sidebar .back-color-shape {
+        height: 165px;
+    }
+
+    .muri-prof-img span {
+        margin-bottom: 0!important;
+    }
+
+    .muri-pro-pic {
+        width: auto;
+        height: 250px;
+    }
+
+    .portfolio-logo .muri-logo {
+        height: 30px;
+        width: auto;
+    }
+
+    .muri-navbar-item .navbar-text {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .muri-contact-title {
+        padding: 0 0 10px;
+    }
+
+    .murillo-logo {
+        padding: 5px 25px 10px;
+    }
+
+    .muri-contact {
+        padding: 10px 30px 4px;
+    }
+
+    .nav-social-icons {
+        padding: 16px 0 10px;
+    }
+
+    .muri-copyright {
+        padding: 8px 23px 0;
+        white-space: nowrap;
+    }
+
+    .line-circle-shape,.line-circle-shape.lite-line-circle {
+        left: 27%;
+        top: 45px;
+    }
+
+    .line-circle-shape img,.line-circle-shape.lite-line-circle img {
+        width: auto;
+        height: 150px;
+    }
+
+    .dot-rectangle-one img,.dot-rectangle-two img,.dot-rectangle-one.lite-dot-rectangle img,.dot-rectangle-two.lite-dot-rectangle img {
+        height: 400px;
+        width: auto;
+    }
+
+    .dot-rectangle-two,.dot-rectangle-two.lite-dot-rectangle {
+        left: 28%;
+    }
+
+    .dline-half-circle img,.dline-half-circle.lite-half-circle img {
+        width: 100%;
+        height: auto;
+    }
+
+    .muri-home-content {
+        padding: 50px 0;
+    }
+
+    .home-muri-desc {
+        padding-top: 30px;
+    }
+
+    .strock-heading {
+        font-size: 120px;
+        line-height: 140px;
+    }
+
+    .about-main-title,.port-main-title {
+        top: 44px;
+    }
+
+    .about-muri-desc,.about-detail,.news-muri-desc,.contact-muri-desc,.contact-us-detail {
+        padding: 40px 0 40px;
+    }
+
+    .edu-detail {
+        height: 615px;
+    }
+
+    .master-edu-deatil,.phd-edu-deatil {
+        padding-top: 30px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 228px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 220px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 149px;
+        top: auto;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 158px;
+        top: auto;
+    }
+
+    .about-inter-client .inter-bar.bar,.about-edu-exp .exp-bar.bar {
+        max-width: 606px;
+    }
+
+    .circle-three:after {
+        top: auto;
+        bottom: 194px;
+    }
+
+    .circle-three:before {
+        bottom: 186px;
+    }
+
+    .circle-two:before {
+        top: 199px;
+    }
+
+    .circle-two:after {
+        top: 207px;
+    }
+
+    .about-title,.about-edu-title,.about-exp-title,.about-intu-title,.about-client-title,.testimonial-title,.get-title {
+        padding: 15px 25px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .client-logo {
+        padding: 15px 25px;
+    }
+
+    .slick-dots li button {
+        height: 12px;
+        width: 12px;
+    }
+
+    .slick-list {
+        margin: 0;
+    }
+
+    .tab+label {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 10px 20px;
+    }
+
+    .portfolio-tab-conetent {
+        padding: 40px 0 0;
+    }
+
+    .muri-portfolio-content {
+        padding: 50px 0 70px;
+    }
+
+    .muri-news-blog {
+        padding: 40px 0 0;
+    }
+
+    .muri-headi-text.muri-blog-title {
+        top: 96px;
+    }
+
+    .nav-blog-tag .nav-tag-item {
+        margin: 0 15px 0 0;
+    }
+
+    .get-title:after {
+        margin-left: 217px;
+    }
+}
+
+@media(max-width:1440px) {
+    .muri-sidebar,.muri-sidebar .back-color-shape {
+        width: 330px;
+    }
+
+    li.nav-social-item {
+        margin: 0 15px 0 0;
+    }
+
+    .muri-home-content {
+        padding: 35px 0;
+    }
+
+    .profile-img-col {
+        align-items: flex-start!important;
+    }
+
+    .muri-prof-img span {
+        padding: 0 25px 8px!important;
+    }
+
+    .muri-home-title {
+        padding: 40px 0 20px;
+    }
+
+    .line-circle-shape,.dot-rectangle-two,.line-circle-shape.lite-line-circle,.dot-rectangle-two.lite-dot-rectangle {
+        left: 30%;
+    }
+
+    .dot-rectangle-two,.dot-rectangle-two.lite-dot-rectangle {
+        bottom: 2%;
+    }
+
+    .dot-rectangle-one,.dot-rectangle-one.lite-dot-rectangle {
+        right: 60px;
+    }
+
+    .dot-rectangle-one img,.dot-rectangle-two img,.dot-rectangle-one.lite-dot-rectangle img,.dot-rectangle-two.lite-dot-rectangle img {
+        height: 375px;
+    }
+
+    .about-fun-fact,.about-my-skills,.about-edu-exp,.about-services,.about-inter-client,.muri-get-touch,.single-post-page {
+        padding: 30px 0;
+    }
+
+    .fun-fact-content,.skills-progress-bar {
+        padding-top: 40px;
+    }
+
+    .bd-desc {
+        padding: 0 0 0 13px;
+    }
+
+    .muri-about-detail.row.about-detail-srow.lang-row {
+        padding: 14px 0 0;
+    }
+
+    .about-detail-srow {
+        padding: 4px 0;
+    }
+
+    .edu-detail,.about-interest-list,.about-client-list {
+        margin-top: 40px;
+    }
+
+    .edu-detail {
+        height: auto;
+    }
+
+    .edu-univerty {
+        padding: 10px 0;
+    }
+
+    .about-inter-client .inter-bar.bar,.about-edu-exp .exp-bar.bar,.about-edu-exp .bar {
+        max-width: 690px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 242px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 250px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 176px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 268px;
+    }
+
+    .circle-two:before {
+        top: 220px;
+    }
+
+    .circle-two:after {
+        top: 228px;
+    }
+
+    .circle-three:before {
+        bottom: 168px;
+    }
+
+    .circle-three:after {
+        bottom: 176px;
+    }
+
+    .service-row-one {
+        padding: 40px 0 0;
+    }
+
+    .card-img-top {
+        width: 75px;
+        height: 75px;
+    }
+
+    .service-title {
+        font-size: 17px;
+        padding: 20px 0 10px;
+    }
+
+    .webdesign-card .service-title {
+        font-size: 16px;
+    }
+
+    p.service-text,.service-title {
+        margin: 0;
+    }
+
+    .client-logo {
+        padding: 15px 30px;
+    }
+
+    .about-testimonial {
+        padding: 40px 0 0;
+    }
+
+    .testimonial-wrap {
+        margin: 40px 0 100px;
+    }
+
+    .website-row .deatil-des,.birthday-row .deatil-des {
+        padding-left: 12px;
+    }
+
+    .second-interest-row {
+        margin-top: 30px;
+    }
+
+    .interest-title {
+        padding: 12px 0 0 0;
+    }
+
+    .all-card {
+        height: 280px;
+    }
+
+    .tab__content {
+        padding: 60px 0 20px;
+    }
+
+    .all-card:before {
+        height: 108px;
+    }
+
+    .all-card:hover .info {
+        transform: translateY(15px);
+    }
+
+    .news-title a,.service-text {
+        line-height: 26px;
+    }
+
+    .news-title a,.edu-title {
+        font-size: 18px;
+    }
+
+    .get-title:after {
+        width: 770px;
+    }
+
+    .contact-form {
+        padding: 50px 0 0;
+    }
+
+    .c-glitch {
+        height: 375px;
+    }
+}
+
+@media(max-width:1400px) {
+    .graphic-design {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:1300px) and (max-width:1380px) {
+    .main-wrapper {
+        margin-left: 330px;
+    }
+
+    li.nav-social-item {
+        margin: 0 15px 0 0;
+    }
+}
+
+@media(min-width:1300px) and (max-width:1380px) {
+    .muri-headi-text {
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    .strock-heading {
+        font-size: 114px;
+        line-height: 124px;
+    }
+
+    .about-main-title {
+        top: 35px;
+    }
+
+    .about-muri-desc,.about-detail,.news-muri-desc,.contact-muri-desc,.contact-us-detail,.muri-get-touch {
+        padding: 20px 0 20px;
+    }
+
+    .fact-title {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .fact-counter span {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .fact-title {
+        padding: 0 0 15px;
+    }
+
+    .muri-about-detail.row.about-detail-srow.lang-row {
+        padding: 15px 0 0;
+    }
+
+    .about-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .edu-univerty {
+        padding: 5px 0;
+    }
+
+    .edu-detail,.about-interest-list,.about-client-list,.second-interest-row {
+        margin-top: 30px;
+    }
+
+    .edu-detail {
+        height: 640px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 234px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 242px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 150px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 158px;
+    }
+
+    .card-img-top {
+        width: 75px;
+        height: 75px;
+    }
+
+    .circle-two:before {
+        top: 209px;
+    }
+
+    .circle-two:after {
+        top: 217px;
+    }
+
+    .circle-three:before {
+        bottom: 189px;
+    }
+
+    .circle-three:after {
+        bottom: 197px;
+    }
+
+    .service-text {
+        margin: 0;
+    }
+
+    .service-title {
+        padding: 20px 0 10px;
+    }
+
+    .service-card {
+        padding: 23px 22px;
+    }
+
+    .interest-icon {
+        height: 116px;
+        width: 116px;
+    }
+
+    .client-logo {
+        padding: 12px 30px;
+    }
+
+    .tab+label {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 5px;
+    }
+
+    .all-card {
+        width: auto;
+        height: 250px;
+    }
+
+    .all-card:before {
+        height: 100px;
+    }
+
+    .all-card .info {
+        transform: translateY(28px);
+    }
+
+    .all-card:hover .info {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+
+    .all-card-title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .all-card-subtitle,.deatil-des {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .muri-portfolio-content {
+        padding: 50px 0 20px;
+    }
+
+    .news-deatils {
+        padding: 20px 0 0 0;
+    }
+
+    .news-title {
+        padding: 10px 0 5px;
+    }
+
+    .muri-new-blog-second {
+        padding: 40px 0 0 0;
+    }
+
+    .muri-news-page {
+        padding: 50px 0 60px;
+    }
+
+    .deatil-des {
+        line-height: 28px;
+    }
+
+    .map-responsive {
+        padding-bottom: 82.25%;
+    }
+
+    .contact-form .form-group.comment-box {
+        margin-bottom: 40px!important;
+    }
+
+    .get-title:after {
+        width: 728px;
+    }
+}
+
+@media(max-width:1200px) {
+    .muri-sidebar,.muri-sidebar .back-color-shape {
+        width: 330px;
+    }
+
+    .main-wrapper {
+        margin-left: 330px;
+    }
+
+    li.nav-social-item {
+        margin: 0 15px 0 0;
+    }
+
+    .service-text {
+        margin: 0;
+    }
+
+    .strock-heading {
+        font-size: 110px;
+        line-height: 118px;
+    }
+
+    .about-title,.about-edu-title,.about-exp-title,.about-intu-title,.about-client-title,.testimonial-title,.get-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about-muri-desc .muri-short-desc,.tabby-tab label,.review-quote {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 268px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 276px;
+    }
+
+    .fun-fact-content,.skills-progress-bar {
+        padding-top: 30px;
+    }
+
+    .about-fun-fact,.about-my-skills,.about-edu-exp,.about-services,.about-inter-client,.muri-get-touch,.single-post-page {
+        padding: 30px 0;
+    }
+
+    .edu-description {
+        line-height: 26px;
+    }
+
+    .master-edu-deatil,.phd-edu-deatil {
+        padding-top: 22px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 218px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 226px;
+    }
+
+    .circle-two:before {
+        top: 248px;
+    }
+
+    .circle-two:after {
+        top: 256px;
+    }
+
+    .circle-three:before {
+        bottom: 206px;
+    }
+
+    .circle-three:after {
+        bottom: 214px;
+    }
+
+    .graphic-design {
+        margin-top: 30px;
+    }
+
+    .interest-icon {
+        height: 100px;
+        width: 100px;
+    }
+
+    .muri-about-content {
+        padding: 50px 0 50px;
+    }
+
+    .emp-img img {
+        height: 70px;
+    }
+
+    .emp-profile-desc {
+        bottom: -92px;
+    }
+
+    .port-main-title {
+        top: 40px;
+    }
+
+    .portfolio-tab-conetent {
+        padding: 30px 0 0;
+    }
+
+    .deatil-review {
+        padding: 10px 0 0;
+    }
+
+    .detail_project-details {
+        padding: 10px 0 10px;
+    }
+
+    .all-card {
+        height: 200px;
+    }
+
+    .all-card:before {
+        height: 80px;
+    }
+
+    .all-card-title {
+        font-size: 24px;
+    }
+
+    .all-card:hover .info {
+        transform: translateY(16px);
+    }
+
+    .all-card-subtitle {
+        padding: 5px 0;
+    }
+
+    .tab__content {
+        padding: 40px 0 20px;
+    }
+
+    .tab+label {
+        margin: 8px 12px;
+    }
+
+    .all-card-subtitle {
+        font-size: 18px;
+    }
+
+    .muri-news-title .news-main-title {
+        bottom: 7px;
+    }
+
+    .muri-news-blog {
+        padding: 30px 0 0;
+    }
+
+    .get-title:after {
+        width: 618px;
+        margin-left: 200px;
+    }
+
+    .muri-new-blog-second {
+        padding-top: 50px;
+    }
+
+    .contact-main-title {
+        bottom: 8px;
+    }
+
+    .contact-form {
+        padding: 30px 0 0;
+    }
+
+    .map-responsive {
+        padding-bottom: 88.25%;
+    }
+}
+
+@media(max-width:1040px) {
+    .about-me-content-col {
+        padding: 0;
+    }
+
+    .main-wrapper {
+        margin-left: 0;
+    }
+
+    .muri-resp-header {
+        padding: 30px 0;
+        z-index: 4;
+        position: relative;
+    }
+
+    .muri-resp-header.sticky {
+        position: sticky;
+        top: 0;
+        bottom: auto;
+        background: #000;
+        box-shadow: 0 4px 10px 0 rgb(0 0 0 / 88%);
+    }
+
+    .resp-muri-logo img {
+        width: auto;
+        height: 35px;
+    }
+
+    .muri-sidebar .back-color-shape {
+        height: 145px;
+    }
+
+    .muri-pro-pic {
+        height: 235px;
+    }
+
+    .muri-sidebar.open-menu {
+        right: 0;
+        left: auto;
+        z-index: 7;
+        opacity: 1;
+        transition: all .4s ease-in-out;
+    }
+
+    .close-line {
+        visibility: visible;
+    }
+
+    .muri-sidebar {
+        opacity: 0;
+        right: -335px;
+        left: auto;
+        z-index: 1;
+        transition: all .4s ease-in-out;
+    }
+
+    .murillo-logo {
+        display: none;
+    }
+
+    .line-circle-shape.lite-line-circle {
+        top: 121px;
+    }
+
+    .line-circle-shape.lite-line-circle img {
+        width: auto;
+        height: 122px;
+    }
+
+    .lite-dot-rectangle,.lite-dot-rectangle {
+        top: 17%;
+    }
+
+    .rectangle-one.lite-dot-rectangle img {
+        height: 348px;
+    }
+
+    .dot-rectangle-two.lite-dot-rectangle {
+        top: 47%;
+    }
+
+    .dot-rectangle-one img,.dot-rectangle-two img {
+        height: 330px;
+        width: auto;
+    }
+
+    .muri-resp-header.light-header.sticky {
+        background-color: #fff;
+    }
+
+    .muri-resp-header.light-header.sticky {
+        box-shadow: 0 4px 10px 0 rgb(225 218 218 / 88%);
+    }
+
+    .muri-resp-header.light-header .hamburger .line {
+        background-color: #000;
+    }
+
+    .white-background .close-line .line {
+        background-color: #000;
+    }
+
+    .muri-resp-header {
+        opacity: 1;
+        display: block;
+    }
+
+    .muri-contact {
+        padding: 8px 30px;
+    }
+
+    .nav-social-icons {
+        padding: 20px 0 14px;
+    }
+
+    .muri-prof-img span {
+        padding: 0 12px 8px!important;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        padding: 0 10px;
+    }
+
+    .muri-contact {
+        padding: 8px 20px;
+    }
+
+    .muri-copyright {
+        padding: 10px 20px 0;
+    }
+
+    section.muri-home-content {
+        min-height: auto!important;
+    }
+
+    .line-circle-shape img,.line-circle-shape.lite-line-circle img {
+        width: auto;
+        height: 130px;
+    }
+
+    .line-circle-shape,.dot-rectangle-two,.line-circle-shape.lite-line-circle,.dot-rectangle-two.lite-dot-rectangle {
+        left: 6%;
+    }
+
+    .home-img-card {
+        height: 400px;
+    }
+
+    .line-circle-shape {
+        top: 135px;
+    }
+
+    .home-muri-desc {
+        padding-top: 7px;
+    }
+
+    .muri-home-title {
+        padding: 20px 0 20px;
+    }
+
+    .muri-home-content {
+        padding: 35px 0 30px;
+    }
+
+    .muri-home-content .row {
+        min-height: 75vh;
+    }
+
+    .glitch-img,.muri-home-img-glitch {
+        height: 345px;
+    }
+
+    .muri-about-content,.muri-portfolio-content,.muri-contact-page,.about-muri-desc,.about-detail,.news-muri-desc,.contact-muri-desc,.contact-us-detail {
+        padding: 30px 0 30px;
+    }
+
+    .muri-headi-text {
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+    .muri-home-title .muri-headi-text {
+        font-size: 50px;
+    }
+
+    .about-main-title {
+        top: 40px;
+    }
+
+    .bd-desc {
+        padding: 0 0 0 8px;
+    }
+
+    .graphic-design {
+        margin-top: 30px;
+    }
+
+    .edu-detail {
+        height: 610px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 220px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 228px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 152px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 160px;
+    }
+
+    .circle-two:before {
+        top: 195px;
+    }
+
+    .circle-two:after {
+        top: 203px;
+    }
+
+    .circle-three:before {
+        bottom: 190px;
+    }
+
+    .circle-three:after {
+        bottom: 198px;
+    }
+
+    .service-card {
+        padding: 23px 20px;
+    }
+
+    .tabby-tab label {
+        padding: 12px 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .all-card-subtitle {
+        padding: 5px 0;
+    }
+
+    .all-card:hover .info {
+        transform: translateY(9px);
+    }
+
+    .tabby-content {
+        top: 14%;
+    }
+
+    .tab__content {
+        padding: 35px 0 20px;
+    }
+
+    .tab+label {
+        margin: 0 6px;
+    }
+
+    .tab-wrap {
+        margin: 15px 0;
+    }
+
+    .muri-news-page {
+        padding: 20px 0 50px;
+    }
+
+    .muri-news-title .news-main-title {
+        bottom: 15px;
+    }
+
+    .muri-news-blog {
+        padding: 30px 0 0;
+    }
+
+    .news-more:after {
+        margin-top: 4px;
+    }
+
+    .muri-new-blog-second {
+        padding: 50px 0 0 0;
+    }
+
+    .get-title:after {
+        width: 705px;
+        top: 27px;
+    }
+
+    .contact-main-title {
+        bottom: 18px;
+    }
+}
+
+@media(max-width:991px) {
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    .profile-img-col {
+        justify-content: flex-start!important;
+    }
+
+    a.muri-prof-img {
+        padding: 0 0 0 25px;
+        display: contents;
+    }
+
+    .muri-pro-pic {
+        height: 215px;
+    }
+
+    .muri-contact {
+        padding: 16px 25px 0;
+    }
+
+    .three.col.is-open {
+        padding-right: 0;
+    }
+
+    .muri-prof-img span {
+        padding: 2px 12px 24px!important;
+    }
+
+    .muri-headi-text {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .muri-home-title {
+        padding: 25px 0 15px;
+    }
+
+    .home-img-card {
+        height: 360px;
+    }
+
+    section.muri-home-content {
+        min-height: 85vh!important;
+    }
+
+    .bd-desc {
+        padding: 0 0 0 15px;
+    }
+
+    .strock-heading {
+        font-size: 96px;
+        line-height: 100px;
+    }
+
+    .about-main-title {
+        top: 30px;
+    }
+
+    .about-title,.about-edu-title,.about-exp-title,.about-intu-title,.about-client-title,.testimonial-title,.get-title {
+        padding: 12px 18px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .main-wrap-fact {
+        padding-top: 20px;
+    }
+
+    .fact-counter {
+        padding: 15px 0 5px;
+    }
+
+    .fact-counter span {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .fact-desc {
+        line-height: 24px;
+    }
+
+    .fun-fact-content {
+        padding-top: 8px;
+    }
+
+    .edu-detail {
+        height: auto;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before,.circle-two:before {
+        top: 160px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after,.circle-two:after {
+        top: 168px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before,.circle-three:before {
+        bottom: 116px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after,.circle-three:after {
+        bottom: 124px;
+    }
+
+    .about-edu-exp .bar,.about-edu-exp .exp-bar.bar, {
+        max-width: 680px;
+    }
+
+    .exper-col {
+        padding-top: 40px;
+    }
+
+    .service-title {
+        font-size: 17px;
+    }
+
+    .service-card {
+        padding: 23px 22px;
+    }
+
+    .interest-icon {
+        height: 94px;
+        width: 94px;
+    }
+
+    .interest-icon svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .client-logo {
+        padding: 12px 10px;
+    }
+
+    .testi-description {
+        padding: 25px 25px 58px;
+    }
+
+    .emp-img img {
+        height: 65px;
+    }
+
+    .emp-name,.tabby-tab label {
+        font-size: 16px;
+        padding-top: 16px;
+    }
+
+    .port-main-title {
+        top: 28px;
+    }
+
+    .sound-card,.detail-card-three {
+        padding-top: 30px;
+    }
+
+    .tabby-tab label {
+        padding: 12px 16px;
+        line-height: 24px;
+    }
+
+    .deatil-card-row.justify-content-center {
+        justify-content: flex-start!important;
+    }
+
+    .tab+label {
+        margin: 5px 5px;
+    }
+
+    .tab-wrap {
+        margin: 15px 0;
+    }
+
+    .muri-new-blog-second,.muri-new-blog-first {
+        padding: 40px 0 0 0;
+    }
+
+    .news-more a {
+        font-size: 16px;
+    }
+
+    .muri-news-title .news-main-title {
+        bottom: 11px;
+    }
+
+    .contact-main-title {
+        bottom: 13px;
+    }
+
+    .get-title:after {
+        width: 498px;
+        top: 24px;
+        margin-left: 172px;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 12px!important;
+    }
+
+    .contact-form .form-group.comment-box {
+        margin-bottom: 30px!important;
+    }
+
+    .map-responsive {
+        padding-bottom: 97.25%;
+    }
+
+    .contact-us-detail {
+        padding: 20px 0 20px;
+    }
+
+    .contact-city {
+        padding-top: 8px;
+    }
+
+    .form-group .blog-submit-btn.btnContact {
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .resp-muri-logo img {
+        height: 25px;
+    }
+
+    .dot-rectangle-one {
+        right: 30px;
+        top: 15%;
+    }
+
+    .dot-rectangle-one img,.dot-rectangle-two img {
+        height: 300px;
+    }
+
+    .muri-resp-header {
+        padding: 25px 0;
+    }
+
+    .line-circle-shape img {
+        height: 105px;
+    }
+
+    .three.col.is-open {
+        position: initial;
+    }
+
+    .profile-img-col {
+        justify-content: flex-start!important;
+    }
+
+    .muri-prof-img {
+        padding-left: 25px;
+    }
+
+    .line-circle-shape,.line-circle-shape.lite-line-circle {
+        top: 78px;
+    }
+
+    .dot-rectangle-one.lite-dot-rectangle {
+        right: 36px;
+    }
+
+    .dot-rectangle-one.lite-dot-rectangle img {
+        height: 332px;
+    }
+
+    .dot-rectangle-two.lite-dot-rectangle {
+        top: 51%;
+    }
+
+    .line-circle-shape.lite-line-circle img {
+        height: 105px;
+    }
+
+    .dline-half-circle,.dline-half-circle.lite-half-circle {
+        bottom: 7%;
+    }
+
+    .muri-contact-title {
+        padding: 15px 0 9px;
+    }
+
+    .muri-contact {
+        padding: 0 20px;
+    }
+
+    .home-img-card {
+        height: 310px;
+    }
+
+    .muri-home-title .muri-headi-text {
+        font-size: 40px;
+    }
+
+    .muri-headi-text {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .muri-medi-text,.text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .muri-home-content {
+        padding: 20px 0;
+    }
+
+    .strock-heading {
+        font-size: 65px;
+        line-height: 80px;
+    }
+
+    .about-main-title {
+        top: 26px;
+    }
+
+    .muri-about-content,.muri-portfolio-content,.muri-contact-page {
+        padding: 25px 0 25px;
+    }
+
+    .about-muri-desc,.about-detail,.news-muri-desc,.contact-muri-desc,.contact-us-detail,.muri-get-touch {
+        padding: 15px 0 15px;
+    }
+
+    .muri-about-detail.about-detail-frow {
+        padding: 0 0 5px 0;
+    }
+
+    .muri-about-detail.about-detail-trow {
+        padding: 5px 0 0;
+    }
+
+    .fact-counter span {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .main-wrap-fact.my-projects,.main-wrap-fact.my-experience,.main-wrap-fact.award-achive {
+        padding-top: 28px;
+    }
+
+    .fact-title {
+        padding: 0 0 8px;
+    }
+
+    .main-wrap-fact,.muri-coding-skill {
+        padding-top: 12px;
+    }
+
+    .about-fun-fact,.about-inter-client,.muri-get-touch,.single-post-page {
+        padding: 15px 0;
+    }
+
+    .fun-fact-content,.skills-progress-bar,.interest-title {
+        padding-top: 10px;
+    }
+
+    .skill-name {
+        padding: 12px 0 5px 0;
+    }
+
+    .edu-univerty,.muri-comment-form-cookies-consent label {
+        font-size: 18px;
+    }
+
+    .edu-univerty {
+        padding: 2px 0 8px;
+    }
+
+    .edu-description,.edu-univerty {
+        line-height: 22px;
+    }
+
+    .edu-detail {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .circle-dashed:before,.circle-two:before,.circle-three:before {
+        padding: 10px;
+        left: -13px;
+    }
+
+    .circle-dashed:after,.circle-two:after,.circle-three:after {
+        left: -6px;
+        top: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    .bach-edu-deatil .bach-edu.circle-dashed:before {
+        top: -5px;
+    }
+
+    .bach-edu-deatil .bach-edu.circle-dashed:after {
+        top: 2px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 212px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 219px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 148px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 155px;
+    }
+
+    .circle-two:before {
+        top: 190px;
+    }
+
+    .circle-two:after {
+        top: 197px;
+    }
+
+    .circle-three:before {
+        bottom: 148px;
+    }
+
+    .circle-three:after {
+        top: auto;
+        bottom: 155px;
+    }
+
+    .about-my-skills,.about-services,.about-edu-exp {
+        padding: 15px 0 25px;
+    }
+
+    .exper-col,.client-column {
+        padding-top: 35px;
+    }
+
+    .service-card {
+        padding: 36px 22px;
+    }
+
+    .service-row-one {
+        padding: 20px 0 0;
+    }
+
+    .ui-ux-card,.all-deatil-slider,.detail-card-two,.image-card-one,.sound-cloud-card-two,.vimeo-card-two,.youtube-card-two {
+        padding-top: 30px;
+    }
+
+    .fact-counter {
+        padding: 10px 0 5px;
+    }
+
+    .second-interest-row,.photogr-inter,.about-interest-list,.about-client-list {
+        margin-top: 20px;
+    }
+
+    .about-testimonial {
+        padding: 25px 0 0;
+    }
+
+    .testimonial-wrap {
+        margin: 20px 0 90px;
+    }
+
+    .tab-wrap {
+        margin: 20px 0;
+    }
+
+    .port-main-title {
+        top: 27px;
+    }
+
+    .tab+label {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 5px 5px;
+    }
+
+    .all-card {
+        height: 295px;
+    }
+
+    .all-card:before {
+        height: 118px;
+        opacity: .8;
+    }
+
+    .all-card .info {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .news-blog-two,.muri-new-blog-first {
+        padding: 45px 0 0;
+    }
+
+    .strock-heading.contact-back-title {
+        font-size: 60px;
+    }
+
+    .contact-main-title {
+        bottom: 17px;
+    }
+
+    .contact-email {
+        padding: 8px 0;
+    }
+
+    .get-title:after {
+        width: 256px;
+    }
+
+    .google-map-img {
+        padding: 0 0 30px;
+    }
+
+    .contact-form-col {
+        order: 2;
+    }
+
+    .map-image-col {
+        order: 1;
+    }
+
+    .c-glitch {
+        height: 280px;
+    }
+}
+
+@media(max-width:425px) {
+    .get-title:after {
+        width: 202px;
+    }
+}
+
+@media(max-width:390px) {
+    .muri-about-content,.muri-portfolio-content,.muri-contact-page {
+        padding: 10px 0 25px;
+    }
+
+    .strock-heading {
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0;
+    }
+
+    .about-title,.about-edu-title,.about-exp-title,.about-intu-title,.about-client-title,.testimonial-title,.get-title {
+        padding: 10px 14px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .service-title {
+        padding: 20px 0 8px;
+    }
+
+    .service-text {
+        line-height: 26px;
+    }
+
+    .service-card {
+        padding: 35px 24px;
+    }
+
+    .edu-title {
+        font-size: 16px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 234px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 241px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 167px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 174px;
+    }
+
+    .circle-two:before {
+        top: 213px;
+    }
+
+    .circle-two:after {
+        top: 220px;
+    }
+
+    .circle-three:before {
+        bottom: 169px;
+    }
+
+    .circle-three:after {
+        bottom: 176px;
+    }
+
+    .port-main-title {
+        top: 17px;
+    }
+
+    .muri-news-blog {
+        padding: 15px 0 0;
+    }
+
+    .strock-heading.contact-back-title {
+        font-size: 53px;
+    }
+
+    .contact-main-title {
+        bottom: 12px;
+    }
+
+    .get-title:after {
+        width: 189px;
+        top: 18px;
+        margin-left: 148px;
+    }
+}
+
+@media(max-width:375px) {
+    .muri-about-project {
+        padding: 7px 0 8px;
+    }
+
+    .news-title {
+        padding: 5px 0 5px;
+    }
+
+    .news-deatils {
+        padding: 12px 0 0 0;
+    }
+
+    .muri-news-page {
+        padding: 10px 0 50px;
+    }
+
+    .get-title:after {
+        width: 173px;
+    }
+
+    .c-glitch {
+        height: 236px;
+    }
+}
+
+@media(max-width:320px) {
+    .muri-sidebar,.muri-sidebar .back-color-shape {
+        width: 320px;
+    }
+
+    .muri-resp-header {
+        padding: 20px 0;
+    }
+
+    .muri-headi-text {
+        font-size: 32px;
+    }
+
+    .home-muri-desc {
+        padding-top: 10px;
+    }
+
+    .strock-heading {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    .about-main-title {
+        top: 15px;
+    }
+
+    .bd-desc,.work-post-deatil {
+        padding: 0 0 0 34px;
+    }
+
+    .fact-counter {
+        padding: 7px 0 5px;
+    }
+
+    .fact-counter span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .deatil-title,.fact-desc {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .main-wrap-fact {
+        padding-top: 5px;
+    }
+
+    .main-wrap-fact.my-projects,.main-wrap-fact.my-experience,.main-wrap-fact.award-achive {
+        padding-top: 20px;
+    }
+
+    .client-img svg {
+        height: 30px;
+        width: 35px;
+    }
+
+    .client-img {
+        padding: 8px 0 2px;
+    }
+
+    .service-card {
+        padding: 20px 22px;
+    }
+
+    .service-title {
+        white-space: pre-line;
+    }
+
+    .service-title,.tab+label {
+        font-size: 16px;
+    }
+
+    .about-inter-client,.service-title,.muri-get-touch {
+        padding: 15px 0 6px;
+    }
+
+    .card-img-top {
+        width: 70px;
+        height: 70px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:before {
+        top: 255px;
+    }
+
+    .master-edu-deatil .master-edu.circle-two:after {
+        top: 262px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:before {
+        bottom: 210px;
+    }
+
+    .phd-edu-deatil .phd-edu.circle-three:after {
+        bottom: 217px;
+    }
+
+    .circle-two:before {
+        top: 212px;
+    }
+
+    .circle-two:after {
+        top: 219px;
+    }
+
+    .circle-three:before {
+        bottom: 170px;
+    }
+
+    .circle-three:after {
+        bottom: 177px;
+    }
+
+    .client-logo {
+        padding: 10px 7px;
+    }
+
+    .client-img {
+        padding: 0;
+    }
+
+    .client-logo-col {
+        padding-bottom: 14px!important;
+    }
+
+    .slick-slide {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .testi-description {
+        padding: 20px 20px 40px;
+        line-height: 24px;
+    }
+
+    .edu-description {
+        font-size: 17px;
+    }
+
+    .emp-profile-desc {
+        bottom: -96px;
+    }
+
+    .emp-img img {
+        height: 60px;
+    }
+
+    .slick-dots li button {
+        height: 10px;
+        width: 10px;
+        margin: 0 3px;
+    }
+
+    .tab+label {
+        line-height: 20px;
+        margin: 5px 4px;
+        padding: 10px 16px;
+    }
+
+    .tab-wrap {
+        margin: 10px 0;
+    }
+
+    .news-title a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .strock-heading.contact-back-title {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .contact-main-title {
+        bottom: 4px;
+    }
+
+    .get-title:after {
+        width: 120px;
+    }
+}
+
+@media(max-width:1440px) {
+    .project-feature {
+        padding: 20px 0 30px;
+    }
+
+    .deatil-review span {
+        margin-top: 4px;
+    }
+
+    .deatil-review span:before {
+        left: 9px;
+    }
+}
+
+@media(max-width:1024px) {
+    .detail-side-image,.muri-about-project {
+        padding: 20px 0;
+    }
+
+    .review-quote {
+        margin: 0;
+    }
+
+    .project-feature {
+        padding: 10px 0 20px;
+    }
+
+    .detail-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .back-port {
+        padding: 16px 22px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .deatil-review {
+        padding: 10px 0 14px;
+    }
+
+    .form-group button,.back-button a.back-port,.form-group .blog-submit-btn {
+        padding: 15px 24px;
+    }
+
+    .project-img-row {
+        padding: 30px 0 60px;
+    }
+}
+
+@media(max-width:991px) {
+    .project-feature {
+        padding: 5px 0 15px;
+    }
+
+    .project-img-row {
+        padding: 30px 0 40px;
+    }
+
+    .detail_project-details {
+        padding: 10px 0 10px 0;
+    }
+
+    .muri-about-project {
+        padding: 20px 0 5px;
+    }
+
+    .muri-detail-descri {
+        padding: 15px 0 10px;
+    }
+
+    .muri-deatil-page {
+        padding: 40px 0!important;
+    }
+}
+
+@media(max-width:767px) {
+    .muri-deatil-page {
+        padding: 25px 0 40px!important;
+    }
+
+    .detail_project-details .muri-detail-field {
+        font-size: 16px;
+    }
+
+    .muri-about-project {
+        padding: 20px 0 0;
+    }
+
+    .detail_project-details {
+        padding: 10px 0 0;
+    }
+
+    .deatil-review span:before {
+        margin-top: 12px;
+    }
+
+    .form-group button,.back-button a.back-port,.form-group .blog-submit-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .muri-news-page {
+        padding: 10px 0 50px;
+    }
+}
+
+@media(max-width:320px) {
+    .detail-title {
+        font-size: 20px;
+    }
+
+    .project-feature,.detail-title {
+        line-height: 24px;
+    }
+
+    .detail-side-image {
+        padding: 10px 0 5px;
+    }
+
+    .muri-detail-descri {
+        padding: 5px 0 10px;
+    }
+
+    .review-quote {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .project-img-row {
+        padding: 15px 0 35px;
+    }
+}
+
+@media(max-width:1440px) {
+    .blog-long-desc {
+        padding: 10px 0;
+    }
+
+    .blog-quote {
+        margin: 20px 0;
+    }
+
+    .blog-social-tag .nav-social-icons {
+        padding: 15px 0 10px;
+    }
+
+    .form-group .btnContact {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+
+    .blog-main-title {
+        font-size: 32px;
+    }
+
+    .next-post-btn .btn-label svg {
+        padding: 0 4px 0 10px;
+    }
+
+    .prev-post-btn .btn-label svg {
+        padding: 0 10px 0 5px;
+    }
+
+    a.prev-post-btn:hover img {
+        right: 10px;
+    }
+
+    a.next-post-btn:hover img {
+        left: 10px;
+    }
+
+    .prev-arrow.slick-arrow {
+        left: 20px;
+    }
+
+    .next-arrow.slick-arrow {
+        right: 20px;
+    }
+
+    .prev-arrow.slick-arrow,.next-arrow.slick-arrow {
+        top: 45%;
+    }
+}
+
+@media(min-width:1300px) and (max-width:1380px) {
+    .blog-social-tag .nav-social-icons {
+        padding: 4px 0 10px;
+    }
+
+    .prev-post-btn .btn-label svg {
+        padding: 0 10px 0 2px;
+    }
+
+    .next-post-btn .btn-label svg {
+        padding: 0 2px 0 10px;
+    }
+
+    a.prev-post-btn:hover img {
+        right: 10px;
+    }
+
+    a.next-post-btn:hover img {
+        left: 10px;
+    }
+
+    .single-post-page,.muri-single-blog {
+        padding: 50px 0 8px;
+    }
+
+    a.next-post-btn img,a.prev-post-btn img {
+        height: 130px;
+    }
+}
+
+@media(max-width:1024px) {
+    .muri-single-blog {
+        padding: 40px 0;
+    }
+
+    .muri-headi-text.muri-blog-title {
+        top: 79px;
+    }
+
+    .blog-main-title,.news-blog-card .all-card-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .social-icon,.blog-tag {
+        padding: 30px 0 20px;
+    }
+
+    .blog-btn {
+        padding: 6px 16px;
+    }
+
+    .single-post-page {
+        padding: 50px 0 10px;
+    }
+
+    .blog-social-comments {
+        padding: 30px 0 15px;
+    }
+
+    a.next-post-btn:hover img {
+        top: -62px;
+        left: -5px;
+    }
+
+    a.prev-post-btn img {
+        top: -56px;
+    }
+
+    a.next-post-btn img,a.prev-post-btn img {
+        width: auto;
+        height: 125px;
+    }
+
+    .next-post-btn .btn-label svg {
+        padding: 0 11px 2px 0;
+    }
+
+    .blog-next-prev-btns a {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0;
+    }
+
+    a.next-post-btn:hover img {
+        top: -42px;
+    }
+
+    a.next-post-btn img {
+        top: -44px;
+    }
+
+    .blog-next-prev-post {
+        padding: 25px 0;
+    }
+
+    .prev-post-btn .btn-label svg {
+        padding: 0 0 4px 15px;
+    }
+
+    .blog-quote-content {
+        font-size: 22px;
+    }
+
+    .muri-blog-link {
+        padding: 40px 30px;
+    }
+
+    .news-blog-card:before {
+        height: 90px;
+    }
+}
+
+@media(max-width:991px) {
+    .muri-headi-text.muri-blog-title {
+        top: 62px;
+    }
+
+    .blog-main-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .nav-blog-tag .nav-tag-item {
+        margin: 0 10px 0 0;
+    }
+
+    .blog-quote {
+        margin: 10px 0;
+    }
+
+    .blog-social-tag .nav-social-icons {
+        padding: 2px 0 2px;
+    }
+
+    .muri-post-author {
+        margin-bottom: 38px!important;
+    }
+
+    .blog-tag,.social-icon,.blog-tag {
+        padding: 20px 0 20px;
+    }
+
+    .blog-social-comments {
+        padding: 20px 0 0;
+    }
+
+    .leav-comm-heading {
+        padding: 10px 0 20px 0;
+    }
+
+    .blog-cate-comme {
+        padding: 25px 10px 12px;
+    }
+
+    .muri-single-blog {
+        padding: 30px 0;
+    }
+
+    .muri-comment-form-cookies-consent label {
+        font-size: 18px;
+    }
+
+    .save-email-label,.blog-comment-form .form-group.blog-comment {
+        margin-bottom: 30px!important;
+    }
+
+    .blog-comment-form {
+        padding: 35px 0 0;
+    }
+
+    a.next-post-btn img,a.prev-post-btn img {
+        height: 100px;
+    }
+
+    a.next-post-btn:hover img {
+        top: -34px;
+    }
+
+    a.prev-post-btn:hover img {
+        right: 2px;
+        top: -30px;
+    }
+
+    .muri-blog-quote,.muri-blog-link {
+        padding: 40px 30px;
+    }
+
+    .prev-arrow.slick-arrow,.next-arrow.slick-arrow {
+        height: 30px;
+        width: 30px;
+    }
+
+    .prev-arrow.slick-arrow {
+        left: 28px;
+    }
+
+    .next-arrow.slick-arrow {
+        right: 28px;
+    }
+
+    .blog-slider .slick-slide {
+        margin: 0;
+    }
+
+    .news-deatils {
+        padding: 22px 0 0 0;
+    }
+}
+
+@media(max-width:767px) {
+    .muri-headi-text.muri-blog-title {
+        top: 44px;
+    }
+
+    .blog-main-title {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 0 14px;
+    }
+
+    .comment-title,.leav-comm-heading {
+        font-size: 24px;
+    }
+
+    .news-blog-des {
+        line-height: 26px;
+    }
+
+    .muri-post-author,.blog-comment-form .form-group.blog-comment {
+        margin-bottom: 30px!important;
+    }
+
+    .blog-cate-comme {
+        padding: 12px 0 12px;
+        font-size: 16px;
+    }
+
+    .news-like svg,.news-comment svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blog-quote {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .nav-blog-tag .nav-tag-item {
+        padding: 8px;
+    }
+
+    .blog-tag {
+        padding: 5px 0 10px;
+    }
+
+    .leav-comm-heading,.comment-title {
+        padding-bottom: 26px;
+    }
+
+    .muri-comment-author img {
+        width: 75px;
+        height: 75px;
+    }
+
+    a.muri-comments-by {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .muri-comm-date-time {
+        font-size: 13px;
+    }
+
+    .muri-comment-content p {
+        font-size: 15px;
+    }
+
+    .back-reply {
+        margin-left: 25px;
+        padding: 30px 0;
+    }
+
+    .blog-btn {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+
+    .form-group .form-control {
+        padding: 10px 20px;
+    }
+
+    .blog-form .form-group {
+        margin-bottom: 18px!important;
+    }
+
+    .form-group .btnContact,.back-port {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .nav-social-item-text,.blog-category {
+        font-size: 18px;
+    }
+
+    .contact-city {
+        padding-top: 1px;
+    }
+
+    .muri-comment-metadata {
+        padding: 0 0 6px 0;
+    }
+
+    .muri-comment-form-cookies-consent {
+        display: inline-flex;
+        padding: 0 0 8px;
+    }
+
+    .muri-comment-form-cookies-consent label {
+        line-height: 20px;
+    }
+
+    .leav-comm-heading {
+        padding: 12px 0 15px 0;
+    }
+
+    .blog-comment-form {
+        padding: 20px 0 0;
+    }
+
+    .blog-next-prev-btns a,.simple-note-line label,.blog-form .col-12 {
+        padding: 0;
+    }
+
+    .next-post-btn .btn-label svg {
+        padding: 0 8px 0 2px;
+    }
+
+    .prev-post-btn .btn-label svg {
+        padding: 0 1px 3px 5px;
+    }
+
+    .blog-next-prev-btns a,.blog-quote-content {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    a.next-post-btn:hover img {
+        top: -22px;
+        left: 1px;
+    }
+
+    a.prev-post-btn:hover img {
+        right: 4px;
+        top: -22px;
+    }
+
+    a.next-post-btn img,a.prev-post-btn img {
+        width: auto;
+        height: 90px;
+    }
+
+    .blog-tag {
+        justify-content: flex-start;
+    }
+
+    .muri-comment-content-wrapper {
+        padding-left: 16px;
+    }
+
+    .muri-single-blog {
+        padding: 18px 0;
+    }
+
+    .single-post-page {
+        padding: 40px 0 10px;
+    }
+
+    .save-email-label {
+        margin-bottom: 20px!important;
+    }
+
+    .muri-blog-quote,.muri-blog-link {
+        padding: 30px 20px;
+    }
+
+    .muri-blog-quote:before,.muri-blog-link:before {
+        width: 55px;
+        height: 55px;
+    }
+
+    .blog-social-tag {
+        padding-top: 10px;
+    }
+
+    .blog-audio-file .plyr__controls {
+        padding: 5px 20px!important;
+    }
+}
+
+@media(max-width:390px) {
+    .muri-single-blog {
+        padding: 15px 0;
+    }
+
+    .muri-headi-text.muri-blog-title {
+        top: 37px;
+    }
+
+    .blog-cate-comme {
+        padding: 12px 0 5px;
+    }
+
+    li.nav-social-item {
+        width: 35px;
+        height: 35px;
+    }
+
+    .blog-tag {
+        padding: 6px 0 0;
+    }
+
+    .muri-comment-content-wrapper {
+        padding-left: 9px;
+    }
+
+    a.muri-comments-by {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .muri-comments-by {
+        font-size: 16px;
+    }
+
+    .muri-home-title .muri-headi-text {
+        font-size: 30px;
+    }
+
+    .next-post-btn .btn-label svg {
+        padding: 0 10px 0 2px;
+    }
+
+    .prev-post-btn .btn-label svg {
+        padding: 0 2px 0 9px;
+    }
+
+    .blog-next-prev-btns a {
+        padding: 0;
+    }
+
+    .blog-next-prev-btns a,.blog-next-prev-btns a,.blog-quote-content {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    a.next-post-btn:hover img {
+        top: -12px;
+    }
+
+    a.next-post-btn img,a.prev-post-btn img {
+        width: auto;
+        height: 75px;
+        border-radius: 10px 25px;
+    }
+
+    a.prev-post-btn img {
+        top: -26px;
+    }
+
+    a.prev-post-btn:hover img {
+        top: -10px;
+    }
+
+    .muri-comment-author img {
+        width: auto;
+        height: 65px;
+    }
+
+    .back-reply {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:320px) {
+    .blog-category,.blog-author-by,.nav-social-item-text,.nav-blog-tag .nav-tag-item {
+        font-size: 16px;
+    }
+
+    .news-blog-des,.muri-post-author,.blog-category {
+        padding: 0;
+    }
+
+    .blog-main-title {
+        font-size: 20px;
+        padding: 0 0 14px;
+    }
+
+    .news-blog-des,.blog-main-title {
+        line-height: 24px;
+    }
+
+    .news-blog-des {
+        margin-bottom: 12px!important;
+    }
+
+    .muri-post-author {
+        margin-bottom: 22px!important;
+    }
+
+    .nav-social-item-text {
+        padding: 0 11px 0 0;
+    }
+
+    li.nav-social-item {
+        margin: 0 10px 0 0;
+    }
+
+    .nav-blog-tag .nav-tag-item {
+        padding: 7px;
+        margin: 0 7px 10px 0;
+    }
+
+    .muri-comment-author img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .back-reply {
+        margin-left: 0;
+    }
+
+    a.muri-comments-by,.muri-comm-date-time {
+        line-height: 18px;
+    }
+
+    .muri-comment-metadata {
+        padding: 0 0 10px 0;
+    }
+
+    .leav-comm-heading {
+        padding: 30px 0 26px 0;
+    }
+
+    .news-blog-card .all-card-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .news-blog-card .all-card-subtitle {
+        font-size: 18px;
+    }
+}
