@@ -26,11 +26,13 @@ a:active{
 	height:auto;
 }
 .header{
+	margin-top: 5px;
 	height:auto;
 }
  
 @media screen and (min-width:600px){
 	.header{
+		margin-top: 5px;
 		text-align: center;
 	}
 	.container,
@@ -53,6 +55,7 @@ a:active{
  
 @media screen and (max-width:600px){
 	.header{
+		margin-top: 5px;
 		text-align: center;
 	}
 	.container,
