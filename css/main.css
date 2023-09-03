@@ -3,7 +3,7 @@ body{
 	font:20px/30px "Microsoft YaHei",arial,serif;
 	color:#333;
 }
-img{border:0;}
+img{border:0; }
 a:link{
     color:#000000; 
     font-size:23px;} /* 未访问的链接 */
@@ -29,7 +29,10 @@ a:active{
 	margin-top: 10px;
 	height:auto;
 }
- 
+.mainBody{
+	width:100%;
+}
+
 @media screen and (min-width:600px){
 	.header{
 		margin-top: 10px;
@@ -51,6 +54,9 @@ a:active{
 	.topBar02{float:left;width:25%;}
 
 	.topBar01{float:left;width:25%;}
+
+	.shouKuanWX{float:left;width:50%;}
+	.shouKuanZFB{float:left;width:50%;}
 }
  
 @media screen and (max-width:600px){
@@ -73,4 +79,7 @@ a:active{
 	.topBar02{float:left;width:49%;}
 
 	.topBar01{float:left;width:49%;}
+
+	.shouKuanWX{float:left;width:100%;}
+	.shouKuanZFB{float:left;width:100%;}
 }
