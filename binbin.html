@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.jianliben.com/resume/detail/4497827 -->
+<html style="overflow-y: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>在线简历制作_简历本</title>
+    <meta name="keywords" content="简历制作，简历模板，简历下载">
+    <meta name="description" content="智能在线简历编辑器，用所见即所得的方式快速制作一份简历，简历制作完后可下载到本地，支持下载Word、PDF、图片格式。">
+    
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <link rel="shortcut icon" href="https://www.jianliben.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./在线简历制作_简历本_files/layui.css">
+    <link rel="stylesheet" href="./在线简历制作_简历本_files/jlbfont.css">
+    <link rel="stylesheet" href="./在线简历制作_简历本_files/resume.all.css">
+    <link rel="stylesheet" href="./在线简历制作_简历本_files/tpl101.css">
+<link type="text/css" rel="stylesheet" href="./在线简历制作_简历本_files/fishEditor.css" id="dynamic-link-node"><link id="layuicss-layer" rel="stylesheet" href="./在线简历制作_简历本_files/layer.css" media="all"><link id="layuicss-laydate" rel="stylesheet" href="./在线简历制作_简历本_files/laydate.css" media="all"></head>
+<body data-letter="hide" style="overflow-y: hidden;">
+    <!-- header start -->
+    <div id="header">
+        <div class="header-top">
+            <div class="header-top-left">
+                <a href="https://www.jianliben.com/">
+                    <img src="./在线简历制作_简历本_files/logo.png" alt="简历本">
+                </a>
+            </div>
+            <div class="header-top-center">
+                                <span id="resume-name">李彬彬简历</span>
+                <span class="resume-status" style="display: none;">*</span>&nbsp;&nbsp;&nbsp;
+                <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop" style="font-size: 13px; display: none;"></i>
+                <i class="layui-icon layui-icon-saved" style="font-size: 12px; display: inline;">စ</i>
+                <span class="resume-autosave">23:47 已保存</span>
+                <button id="operate-save" class="layui-btn layui-btn-primary layui-btn-xs jlb-bg-y" data-trace="editor-operate-save" style="display: none;">
+                    <i class="jlbfont icon-save" style="margin-right:2px;font-size:12px !important;"></i>保存
+                </button>
+            </div>
+            <div class="header-top-right">
+                                                <a id="vip-link" href="javascript:void(0);" rel="nofollow" data-trace="editor-vip-vipup"><i class="jlbfont icon-vip1" style="font-size:13px;"></i>升级VIP</a>&nbsp; |&nbsp;
+                                <a href="https://www.jianliben.com/profile" rel="nofollow"><i class="jlbfont icon-user" style="font-size:15px;"></i>个人中心</a>&nbsp; |&nbsp;
+                <a href="https://www.jianliben.com/profile" rel="nofollow">我的简历</a>&nbsp; |&nbsp;
+                <a href="https://www.jianliben.com/account/logout?page=https://www.jianliben.com/resume/detail/4497827" rel="nofollow">退出</a>
+                            </div>
+        </div>
+        <div class="header-menu">
+            <div class=" jlb-container">
+                <div class="header-menu-left">
+                    <button id="resume-tool" class="layui-btn layui-btn-primary" data-trace="editor-operate-tool">
+                        <i class="jlbfont icon-gongju"></i><br>工具箱
+                        <div id="resume-tool-panel">
+                            <div style="position:absolute;width:87px;height:20px;top:-18px;"></div>
+                            <a class="jlb-tool tool-diagnose" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-diagnose">智能诊断</a>
+                            <a class="jlb-tool tool-translate" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-translate">翻译助手</a>
+                            <a class="jlb-tool tool-checktext" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-checktext">文字纠错</a>
+                                                        <a class="jlb-tool tool-cover" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-cover">简历封面</a>
+                            <a class="jlb-tool tool-letter" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-letter">求职信</a>
+                            <!--<a class="jlb-tool tool-bgimg" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-picture">背景图</a>-->
+                            <!--<a class="jlb-tool tool-logoimg" href="javascript:void(0);" rel="nofollow" data-trace="editor-operate-picture">LOGO图</a>-->
+                                                    </div>
+                    </button>
+                    <button id="resume-his" class="layui-btn layui-btn-primary" data-trace="editor-operate-history">
+                        <i class="jlbfont icon-lishi"></i><br>操作历史<span class="layui-badge">1</span>
+                    </button>
+                    <button id="resume-tpl" class="layui-btn layui-btn-primary" data-trace="editor-operate-templet">
+                        <i class="jlbfont icon-muban"></i><br>更换模板
+                    </button>
+                    <button id="resume-theme" class="layui-btn layui-btn-primary" data-trace="editor-operate-theme">
+                        <i class="jlbfont icon-yanse"></i><br>主题颜色
+                        <div id="resume-theme-panel" style="">
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#222222;" data-val="222222" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#54595C;" data-val="54595C" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#254665;" data-val="254665" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#105E8C;" data-val="105E8C" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#097DC2;" data-val="097DC2" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme resume-theme-this" href="javascript:void(0);" style="background:#5E8EE0;" data-val="5E8EE0" rel="nofollow">&nbsp;</a>
+
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#016866;" data-val="016866" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#467B73;" data-val="467B73" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#019A89;" data-val="019A89" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#00A13C;" data-val="00A13C" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#6B4B24;" data-val="6B4B24" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#847A74;" data-val="847A74" rel="nofollow">&nbsp;</a>
+
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#93101F;" data-val="93101F" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#D9474A;" data-val="D9474A" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#7EABC1;" data-val="7EABC1" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#FF9694;" data-val="FF9694" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#F06600;" data-val="F06600" rel="nofollow">&nbsp;</a>
+                            <a class="resume-theme" href="javascript:void(0);" style="background:#F1CD2D;" data-val="F1CD2D" rel="nofollow">&nbsp;</a>
+                        </div>
+                    </button>
+                    <button id="resume-style" class="layui-btn layui-btn-primary" data-trace="editor-operate-style">
+                        <i class="jlbfont icon-paiban"></i><br>样式排版
+                    </button>
+                </div>
+                <div class="header-menu-right">
+                    <button id="operate-down" class="layui-btn layui-btn-normal jlb-bg-y" data-trace="editor-operate-export">
+                        <i class="jlbfont icon-xiazai"></i><br>下载
+                    </button>
+                    <button id="operate-preview" class="layui-btn layui-btn-primary" data-trace="editor-operate-preview">
+                        <i class="jlbfont icon-chakan"></i><br>预览
+                    </button>
+                                        <button id="operate-import" class="layui-btn layui-btn-primary" data-trace="editor-operate-import">
+                        <i class="jlbfont icon-daoru"></i><br>导入
+                    </button>
+                    <button id="operate-send" class="layui-btn layui-btn-primary" data-trace="editor-operate-send">
+                        <i class="jlbfont icon-fasong"></i><br>发送
+                    </button>
+                    <button id="operate-security" class="layui-btn layui-btn-primary" data-trace="editor-operate-security">
+                        <i class="jlbfont icon-lianjie"></i><br>分享
+                    </button>
+                    <!--<button id="operate-print" class="layui-btn layui-btn-primary" data-trace="editor-operate-print">
+                        <i class="jlbfont icon-print"></i><br>打印
+                    </button>-->
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- container start -->
+    <div id="container">
+        <div id="wrapper" style="position:relative;transform:scale(1);">
+            <!-- cover start -->
+            <div id="cover" data-show="hide" data-covid="1">
+                <img class="cover-img" src="https://www.jianliben.com/resume/detail/4497827" width="100%" height="100%">
+                                    <div class="cover-info ui-draggable" style="left:253px;top:900px;">
+                        <div class="cover-info-add"><i class="jlbfont icon-create" style="font-size:19px"></i></div>
+                        <div class="cover-info-move ui-draggable-handle"><i class="jlbfont icon-move" style="font-size:20px"></i></div>
+                        <div class="baseinfo-row">
+                            <div class="baseinfo-label" contenteditable="true">姓　　名：</div>
+                            <div class="baseinfo-value" contenteditable="true">简历本</div>
+                            <div class="cover-info-del"><i class="jlbfont icon-remove" style="font-size:16px"></i></div>
+                        </div>
+                        <div class="baseinfo-row">
+                            <div class="baseinfo-label" contenteditable="true">毕业学校：</div>
+                            <div class="baseinfo-value" contenteditable="true">湖南大学</div>
+                            <div class="cover-info-del"><i class="jlbfont icon-remove" style="font-size:16px"></i></div>
+                        </div>
+                        <div class="baseinfo-row">
+                            <div class="baseinfo-label" contenteditable="true">求职意向：</div>
+                            <div class="baseinfo-value" contenteditable="true">产品经理</div>
+                            <div class="cover-info-del"><i class="jlbfont icon-remove" style="font-size:16px"></i></div>
+                        </div>
+                    </div>
+                            <button id="cov-switch-btn" class="layui-btn layui-btn-normal layui-btn-xs jlb-bg-b" style="position:absolute;top:10px;right:10px;display:none;">更换封面</button><button id="cov-remove-btn" class="layui-btn layui-btn-normal layui-btn-xs jlb-bg-y" style="position:absolute;top:42px;right:10px;display:none;">删除封面</button></div>
+            <!-- cover end -->
+            <!-- content start -->
+            <div id="content" page="cv" lang="zh">
+                <div id="resume-paper">
+                    <table id="field-list" cellspacing="0" cellpadding="0" class="ui-sortable">     <tbody id="baseinfo" format="col" intro="未在职，目前正在找工作" colnum="gt8" class="ui-sortable">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">基本信息</div>                 </div>             </td>         </tr>         <tr>             <td class="field-value-td">                 <span class="field-value-span">                     <div id="avater-wrapper" data-show="show">                         <div id="avater-inner"><img id="avater-img" alt="简历头像" src="./在线简历制作_简历本_files/cv_photo_4497827.jpg"></div><div id="avater-bgbox"><span id="upload-btn" title="上传照片"><i class="jlbfont icon-add" style="font-size:60px;color:#fff;"></i></span><input class="layui-upload-file" type="file" accept="" name="file"><span class="layui-badge" id="photo-close-btn" data-trace="editor-operate-hidephoto" title="隐藏照片"><i class="jlbfont icon-remove" style="padding:1px;"></i></span></div></div>                     <div id="baseinfo-panel-left"><span class="baseinfo-item baseinfo-fields"><span class="baseinfo-row"><span class="baseinfo-label">姓　　名：</span><span class="baseinfo-value editable" key="name">李彬彬</span></span><span class="baseinfo-row"><span class="baseinfo-label">性　　别：</span><span class="baseinfo-value editable" key="sex">女</span></span><span class="baseinfo-row"><span class="baseinfo-label">年　　龄：</span><span class="baseinfo-value editable" key="age" val="20岁" birthday="2003/06">20岁</span></span><span class="baseinfo-row"><span class="baseinfo-label">手　　机：</span><span class="baseinfo-value editable" key="mobile">15996103985</span></span><span class="baseinfo-row"><span class="baseinfo-label">邮　　箱：</span><span class="baseinfo-value editable" key="email">2603768621@qq.com</span></span><span class="baseinfo-row"><span class="baseinfo-label">学　　历：</span><span class="baseinfo-value editable" key="edu">本科</span></span><span class="baseinfo-row"><span class="baseinfo-label">政治面貌：</span><span class="baseinfo-value editable" key="polity">中共预备党员</span></span><span class="baseinfo-row"><span class="baseinfo-label">现居地址：</span><span class="baseinfo-value editable" key="address" val="苏州" sheng="江苏">江苏苏州</span></span><span class="baseinfo-row"><span class="baseinfo-label">英语等级：</span><span class="baseinfo-value editable" key="custom1">CET4</span></span><span class="baseinfo-row"><span class="baseinfo-label">奖学金　：</span><span class="baseinfo-value editable" key="custom2">校级一等、二等奖学金</span></span></span></div>                     <div id="baseinfo-panel-right">                     </div>                 </span>             </td>         </tr>     </tbody>                                         <tbody block="union-1" key="education" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">教育背景</div>                 </div>             <div class="block-tool-box"><a href="javascript:;" class="add-del-btn block-drag-btn"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn block-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除模块</a><a href="javascript:;" class="add-del-btn block-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>添加模块</a></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-three-column editable-left" contenteditable="true" lay-key="1">2021/09 - 2025/06</div>
+										<div class="editable editable-three-column editable-center ui-resizable" contenteditable="true"><div>江苏科技大学</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right editable-select ui-resizable" contenteditable="true"><div>本科 - 信息管理与信息系统</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column" contenteditable="true">
+											主修课程：高等数学、大学英语、演讲与口才、管理学、线性代数、.Net体系结构、数据库原理与应用、英语口语。<br>成绩排名：平均学分绩点:3.66，专业排名第一。</div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span></td>         </tr>     </tbody><tbody block="union-1" key="practice" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">实践经历</div>                 </div>             <div class="block-tool-box"><a href="javascript:;" class="add-del-btn block-drag-btn"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn block-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除模块</a><a href="javascript:;" class="add-del-btn block-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>添加模块</a></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" contenteditable="true" lay-key="2">2022/03 - 2022/06</div>
+										<div class="editable editable-three-column editable-center ui-resizable" contenteditable="true"><div>第八届“LSCAT”江苏省笔译大赛</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable" contenteditable="true"><div>本科组&nbsp; 省二等奖</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column" contenteditable="true">主要内容：赛题考查汉英翻译能力，涉及经济、政治、文化、社会和生态文明建设等领域的重要话题。<div>实践收获：1、在打磨语言的过程中我得到了翻译能力的提升。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、在实践的过程中，开阔了眼界，获得了提升，面对繁杂的翻译内容，也能够不慌不乱去处理。<br></div></div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span><span class="field-value-span" style="">
+										<div class="editable editable-three-column editable-left" contenteditable="true" lay-key="3">2023/09 - 2023/12</div>
+										<div class="editable editable-three-column editable-center ui-resizable" contenteditable="true"><div>全国大学生数学建模竞赛</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable" contenteditable="true"><div>江苏赛区&nbsp; 省三等奖</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column" contenteditable="true">主要内容：1、通过整理大量往年优秀论文编写好团队的一套论文模板。<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、通过浏览优秀论文内容总结论文书写的思路、组织语言的特点。<div>实践收获：1、能够撰写规定格式的论文，把亮点最明显地呈现；</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、能够撰写达到美赛需求的英语文章。</div></div></div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span></td>         </tr>     </tbody><tbody block="union-1" key="project" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">校园经历</div>                 </div>             <div class="block-tool-box"><a href="javascript:;" class="add-del-btn block-drag-btn"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn block-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除模块</a><a href="javascript:;" class="add-del-btn block-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>添加模块</a></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" contenteditable="true" lay-key="4">2023/09 - 至今</div>
+										<div class="editable editable-three-column editable-center ui-resizable" contenteditable="true"><div><br></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable" contenteditable="true"><div>班导师助理</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column" contenteditable="true">工作内容：负责了2023级学生报到、体检、军训、心理健康、生活、班风建设等全方面管理协调工作。<br></div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" contenteditable="true" lay-key="5">2022/09 - 2023/09</div>
+										<div class="editable editable-three-column editable-center ui-resizable" contenteditable="true"><div><br></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable" contenteditable="true"><div>图书馆馆长助理、读者协会会长</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column" contenteditable="true">工作内容：负责了20余次校级活动的策划部署等工作。<br></div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span></td>         </tr>     </tbody><tbody block="single-1" key="ability" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">专业技能</div>                 </div>             <div class="block-tool-box"><a href="javascript:;" class="add-del-btn block-drag-btn"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn block-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除模块</a><a href="javascript:;" class="add-del-btn block-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>添加模块</a></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-one-column" contenteditable="true">1、2022年校三好学生。&nbsp; &nbsp; &nbsp;2、2023年校三好学生。&nbsp; &nbsp; &nbsp;3、2022年志愿者服务先进个人。</div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span></td>         </tr>     </tbody><tbody block="single-1" key="evaluation" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable" contenteditable="true">自我评价</div>                 </div>             <div class="block-tool-box"><a href="javascript:;" class="add-del-btn block-drag-btn"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn block-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除模块</a><a href="javascript:;" class="add-del-btn block-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>添加模块</a></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-one-column" contenteditable="true">
+											1、工作和团队适应能力：①大学期间作为协会会长、馆长助理、班导师助理。<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ②锻炼了面对复杂问题和突发情况的应急处理能力，以及多方协调能力。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ③情绪稳定，善于沟通，并且具备个人心理调适能力、团队合作能力和动手能力。<div>2、技能储备和专业背景：多次组织并参加英语相关竞赛。</div></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></div>
+									<div class="field-tool-box"><a href="javascript:;" class="add-del-btn field-drag-btn ui-sortable-handle"><i class="jlbfont icon-move" style="font-size:15px"></i></a><a href="javascript:;" class="add-del-btn field-del-btn"><i class="jlbfont icon-remove" style="font-size:12px;"></i>删除本条</a><a href="javascript:;" class="add-del-btn field-add-btn"><i class="jlbfont icon-add" style="font-size:12px;font-weight:bold"></i>新增一条</a><a href="javascript:;" class="add-del-btn desc-del-btn"><i class="jlbfont icon-hide" style="font-size:14px"></i></a><a href="javascript:;" class="add-del-btn desc-add-btn"><i class="jlbfont icon-chakan" style="font-size:16px"></i></a><a href="javascript:;" class="add-del-btn desc-how-btn">如何填写？</a></div></span></td>         </tr>     </tbody></table>                </div>
+            <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 960px; height: 1403px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div>
+            <!-- content end -->
+            <!-- letter start -->
+            <div id="letter" data-show="hide" data-letid="0">
+                                    <img class="cover-img" src="./在线简历制作_简历本_files/rgb_white.png" width="100%" height="100%" style="position:absolute;">
+                    <div class="letter-title editable" contenteditable="true">求职信</div>
+                    <div class="letter-subtitle editable" contenteditable="true">MY &nbsp;&nbsp;COVER &nbsp;&nbsp;LETTER</div>
+                    <div class="letter-content editable" contenteditable="true">
+                        尊敬的领导：<br>
+                        　　您好!<br>
+                        　　首先，向您辛勤的工作致以深深的敬意！同时也真诚的感谢您在百忙之中抽空垂阅我的自荐书。<br>
+                        　　刚踏入校门的我谈不上十分的成熟和足够的经验，但我有过人的胆识和自信心，正所谓：是龙，就应该去大海搏击，是鹰，就应该去长空翱翔。面临人生的重大抉择之际，我希望能加盟于贵单位，展示自己的才能，实现个人的理想与价值。因此，我经过慎重考虑决定竞选培训部门副经理。<br>
+                        　　我认为自己还颇有管理才华，做人诚恳，能把握分寸，可以最大限度的团结部门，做大做强品牌。年轻没有失败！不论结果如何我都会不离不弃，一如既往，坚守岗位。希望部门能给我一个证明自己的机会，给我一个战斗的战场。四年大学生活，对我的帮助不仅仅是为了取得优异的学习成绩和多次获得奖学金，更重要的是要让它培养自己很强的自学能力和分析问题、解决问题的能力。<br>
+                        　　在多次参加部门内训，让我学到了很多课堂上所学不到的东西，让我更加增加了我的责任心以及与人合作的能力，做主持人则锻炼了我的组织、语言表达能力，和我的协调能力，基于此我认为自己符合培训副经理职位的要求。<br>
+                        　　如果我有幸得到您的赏识，担任副经理一职，我将保持奋发向上的精神，谦虚地向前辈们学习，并尽我所学，与公司一起开拓进取，奔向更加辉煌美好的明天！<div><br></div>
+                            此致敬礼！
+                    </div>
+                    <div class="letter-footer editable" contenteditable="true">郭亦凡<br>2019年9月24日</div>
+                            <button id="let-switch-btn" class="layui-btn layui-btn-normal layui-btn-xs jlb-bg-b" style="position:absolute;top:10px;right:10px;display:none;">更换背景图</button><button id="let-remove-btn" class="layui-btn layui-btn-normal layui-btn-xs jlb-bg-y" style="position:absolute;top:42px;right:10px;display:none;">删除求职信</button></div>
+            <!-- letter end -->
+        <span id="page-line-one" style="top: 1343px; display: inline;"><span id="page-tips-one">第1页</span><span class="page-one-btn jlb-bg-b" data-trace="editor-operate-pageone">缩成一页</span></span><span id="page-line-two" style="top: 2478px;"><span id="page-tips-two">第2页</span><span class="page-two-btn jlb-bg-b" data-trace="editor-operate-pageone">缩成二页</span></span></div>
+        <!-- right menu start -->
+        <div id="sidemenu-right">
+            <div class="sm-right-item sm-right-fanwen" data-trace="editor-sidemenu-fanwen">
+                <i class="jlbfont icon-zhinan" style="font-size:30px;"></i><br>简历指南
+            </div>
+            <div class="sm-right-item sm-right-shipin" data-trace="editor-sidemenu-weike">
+                <i class="jlbfont icon-weike" style="font-size:30px;"></i><br>简历微课
+            </div>
+            <div class="sm-right-item sm-right-advisor" data-trace="editor-sidemenu-daka">
+                <i class="jlbfont icon-fuwu" style="font-size:30px;"></i><br>简历定制
+            </div>
+            <div class="sm-right-item sm-right-mobile" data-trace="editor-sidemenu-mobile">
+                <i class="jlbfont icon-shouji" style="font-size:32px;"></i><br>手机制作
+            </div>
+            <div class="sm-right-item sm-right-help" data-trace="editor-sidemenu-help">
+                <i class="jlbfont icon-wenti" style="font-size:30px;"></i><br>常见问题
+            </div>
+            <div class="sm-right-item sm-right-kefu" data-trace="editor-sidemenu-kefu">
+                <span>0</span><i class="jlbfont icon-kefu" style="font-size:30px;"></i><br>在线客服
+            </div>
+            <!--<div class="sm-right-item sm-right-gotop" data-trace="editor-sidemenu-gotop">
+                <i class="jlbfont icon-gotop" style="font-size:30px;"></i><br>返回顶部
+            </div>-->
+        </div>
+        <!-- right menu end -->
+        <div id="page-info"><span class="resume-words">共1页 / 716字</span><span class="resume-typing" style="display: none;"> &nbsp;<span></span><span></span><span></span></span></div>
+        <div id="page-scale">
+            <div class="page-scale-reduce">-</div><div class="page-scale-value">100%</div><div class="page-scale-enlarge">+</div>
+        </div>
+    </div>
+    <!-- container end -->
+    <!-- baseinfo start -->
+    <!-- baseinfo start -->
+<div id="baseinfo-panel-zh" class="baseinfo-panel" style="display:none;">
+    <form class="layui-form layui-form-pane" lay-filter="baseinfo" action="https://www.jianliben.com/resume/detail/4497827">
+        <div class="layui-form-item" style="margin:0px 0px 20px 10px;width:620px;height:40px;border:1px #e6e6e6 dashed;border-radius:3px;">
+            <div class="layui-inline" style="margin-left:0px;">
+                <label class="layui-form-label" style="border:none;background:none;line-height:24px;">显示标题</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="format" lay-filter="format" value="col" title="显示" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>显示</div></div>
+                    <input type="radio" name="format" lay-filter="format" value="row" title="隐藏"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>隐藏</div></div>
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-right:0px;width:295px;">
+                <label class="layui-form-label" style="border:none;background:none;line-height:24px;">显示照片</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="photo" lay-filter="photo" value="show" title="显示" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>显示</div></div>
+                    <input type="radio" name="photo" lay-filter="photo" value="hide" title="隐藏"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>隐藏</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">你的姓名<font color="red"> *</font></label>
+                <div class="layui-input-inline">
+                    <input type="text" name="name" lay-verify="required|limit" autocomplete="off" placeholder="输入姓名" class="layui-input" label="姓　　名">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">你的性别</label>
+                <div class="layui-input-inline">
+                    <select name="sex" lay-filter="sex" lay-verify="limit" label="性　　别">
+                        <option value="" selected=""></option>
+                        <option value="女">女</option>
+                        <option value="男">男</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="女" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="女" class="layui-this">女</dd><dd lay-value="男" class="">男</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">出生年月</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="birthday" age="" lay-verify="limit" placeholder="选择年月" autocomplete="off" class="layui-input" label="年　　龄">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">工作经验</label>
+                <div class="layui-input-inline">
+                    <select name="years" lay-filter="years" label="经　　验">
+                        <option value="" selected=""></option>
+                        <option value="应届生">应届生</option>
+                        <option value="在校生">在校生</option>
+                        <option value="无">无经验</option>
+                        <option value="1年">1年</option>
+                        <option value="2年">2年</option>
+                        <option value="3年">3年</option>
+                        <option value="4年">4年</option>
+                        <option value="5年">5年</option>
+                        <option value="6年">6年</option>
+                        <option value="7年">7年</option>
+                        <option value="8年">8年</option>
+                        <option value="9年">9年</option>
+                        <option value="10年">10年</option>
+                        <option value="10年以上">10年以上</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="应届生" class="">应届生</dd><dd lay-value="在校生" class="">在校生</dd><dd lay-value="无" class="">无经验</dd><dd lay-value="1年" class="">1年</dd><dd lay-value="2年" class="">2年</dd><dd lay-value="3年" class="">3年</dd><dd lay-value="4年" class="">4年</dd><dd lay-value="5年" class="">5年</dd><dd lay-value="6年" class="">6年</dd><dd lay-value="7年" class="">7年</dd><dd lay-value="8年" class="">8年</dd><dd lay-value="9年" class="">9年</dd><dd lay-value="10年" class="">10年</dd><dd lay-value="10年以上" class="">10年以上</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">手机号码</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="mobile" lay-verify="limit" autocomplete="off" placeholder="输入手机" class="layui-input" label="手　　机">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">邮箱地址</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="email" lay-verify="email" autocomplete="off" placeholder="输入邮箱" class="layui-input" label="邮　　箱">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">学　　历</label>
+                <div class="layui-input-inline">
+                    <select name="edu" lay-filter="edu" label="学　　历">
+                        <option value="" selected=""></option>
+                        <option value="大专">大专</option>
+                        <option value="本科">本科</option>
+                        <option value="硕士">硕士</option>
+                        <option value="博士">博士</option>
+                        <option value="中专">中专</option>
+                        <option value="其他">其他</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="本科" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="大专" class="">大专</dd><dd lay-value="本科" class="layui-this">本科</dd><dd lay-value="硕士" class="">硕士</dd><dd lay-value="博士" class="">博士</dd><dd lay-value="中专" class="">中专</dd><dd lay-value="其他" class="">其他</dd></dl></div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">意向岗位</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="job" lay-verify="limit" autocomplete="off" placeholder="如：产品经理" class="layui-input" label="意向岗位">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item baseinfo-more" style="display:none;">
+            <div class="layui-inline">
+                <label class="layui-form-label">婚姻状况</label>
+                <div class="layui-input-inline">
+                    <select name="marital" lay-filter="marital" lay-verify="limit" label="婚姻状况">
+                        <option value="" selected=""></option>
+                        <option value="未婚">未婚</option>
+                        <option value="已婚">已婚</option>
+                        <option value="已婚已育">已婚已育</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="未婚" class="">未婚</dd><dd lay-value="已婚" class="">已婚</dd><dd lay-value="已婚已育" class="">已婚已育</dd></dl></div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">政治面貌</label>
+                <div class="layui-input-inline">
+                    <select name="polity" lay-filter="polity" lay-verify="limit" label="政治面貌">
+                        <option value="" selected=""></option>
+                        <option value="群众">群众</option>
+                        <option value="共青团员">共青团员</option>
+                        <option value="中共党员">中共党员</option>
+                        <option value="中共预备党员">中共预备党员</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="中共预备党员" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="群众" class="">群众</dd><dd lay-value="共青团员" class="">共青团员</dd><dd lay-value="中共党员" class="">中共党员</dd><dd lay-value="中共预备党员" class="layui-this">中共预备党员</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item baseinfo-more" style="display:none;">
+            <div class="layui-inline">
+                <label class="layui-form-label">籍贯地址</label>
+                <div class="layui-input-inline">
+                    <select name="from" lay-filter="from" lay-search="" lay-verify="limit" label="籍　　贯">
+                        <option value="" selected="">省</option>
+                    </select><div class="layui-form-select"><div class="layui-select-title"><input type="text" placeholder="省" value="" class="layui-input"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">省</dd></dl></div>
+                </div>
+                <div class="layui-input-inline" style="left:-2px;">
+                    <select name="shi" lay-filter="shi" lay-search="" lay-verify="limit" label="籍　　贯">
+                        <option value="" selected="">市</option>
+                    </select><div class="layui-form-select"><div class="layui-select-title"><input type="text" placeholder="市" value="" class="layui-input"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">市</dd></dl></div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">现居地址</label>
+                <div class="layui-input-inline">
+                    <select name="sheng" lay-filter="sheng" lay-search="" lay-verify="limit" label="现居地址">
+                        <option value="" selected="">省</option>
+                    </select><div class="layui-form-select"><div class="layui-select-title"><input type="text" placeholder="省" value="" class="layui-input"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">省</dd></dl></div>
+                </div>
+                <div class="layui-input-inline" style="left:-2px;">
+                    <select name="address" lay-filter="address" lay-search="" lay-verify="limit" label="现居地址">
+                        <option value="" selected="">市</option>
+                    </select><div class="layui-form-select"><div class="layui-select-title"><input type="text" placeholder="市" value="" class="layui-input"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">市</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item baseinfo-more baseinfo-custom" style="display:none;"></div>
+        <div class="layui-form-item" style="text-align:center;padding-bottom:5px;">
+                        <a id="baseinfo-add-btn" class="layui-btn layui-btn-primary layui-btn-sm" style="display:none;"><i class="jlbfont icon-create" style="font-size:12px!important;"></i> 添加自定义字段</a>
+                        <a id="baseinfo-more-btn" class="layui-btn layui-btn-primary layui-btn-sm"><i class="jlbfont icon-open" style="font-size:12px!important;"></i> 更多可选字段</a>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block" style="margin-left:20px;width:600px;">
+                <select name="intro" lay-filter="intro" label="简介">
+                    <option value="">一句话描述自己(选填)</option>
+                    <optgroup label="求职状态">
+                        <option value="未在职，目前正在找工作">未在职，目前正在找工作</option>
+                        <option value="目前在职，考虑合适新机会">目前在职，考虑合适新机会</option>
+                    </optgroup>
+                    <optgroup label="其他案例">
+                        <option value="做事滴水穿石，做人滴水不漏">做事滴水穿石，做人滴水不漏</option>
+                        <option value="有10人以上团队管理经验">有10人以上团队管理经验</option>
+                        <option value="全栈工程师，精通Hadoop技术栈">全栈工程师，精通Hadoop技术栈</option>
+                        <option value="个人博客：www.jianliben.com">个人博客：www.jianliben.com</option>
+                    </optgroup>
+                </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="一句话描述自己(选填)" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit layui-select-group"><dd lay-value="" class="layui-select-tips">一句话描述自己(选填)</dd><dt>求职状态</dt><dd lay-value="未在职，目前正在找工作" class="">未在职，目前正在找工作</dd><dd lay-value="目前在职，考虑合适新机会" class="">目前在职，考虑合适新机会</dd><dt>其他案例</dt><dd lay-value="做事滴水穿石，做人滴水不漏" class="">做事滴水穿石，做人滴水不漏</dd><dd lay-value="有10人以上团队管理经验" class="">有10人以上团队管理经验</dd><dd lay-value="全栈工程师，精通Hadoop技术栈" class="">全栈工程师，精通Hadoop技术栈</dd><dd lay-value="个人博客：www.jianliben.com" class="">个人博客：www.jianliben.com</dd></dl></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="baseinfo-panel-en" class="baseinfo-panel" style="display:none;">
+    <form class="layui-form layui-form-pane" lay-filter="baseinfo" action="https://www.jianliben.com/resume/detail/4497827">
+        <div class="layui-form-item" style="margin:0px 0px 20px 10px;width:620px;height:40px;border:1px #e6e6e6 dashed;border-radius:3px;">
+            <div class="layui-inline" style="margin-left:0px;">
+                <label class="layui-form-label" style="border:none;background:none;line-height:24px;">显示标题</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="format" lay-filter="format" value="col" title="显示" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>显示</div></div>
+                    <input type="radio" name="format" lay-filter="format" value="row" title="隐藏"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>隐藏</div></div>
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-right:0px;width:295px;">
+                <label class="layui-form-label" style="border:none;background:none;line-height:24px;">显示照片</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="photo" lay-filter="photo" value="show" title="显示" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>显示</div></div>
+                    <input type="radio" name="photo" lay-filter="photo" value="hide" title="隐藏"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>隐藏</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">你的姓名<font color="red"> *</font></label>
+                <div class="layui-input-inline">
+                    <input type="text" name="name" lay-verify="required|limit" autocomplete="off" placeholder="输入姓名" class="layui-input" label="Name">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">你的性别</label>
+                <div class="layui-input-inline">
+                    <select name="sex" lay-filter="sex" lay-verify="limit" label="Gender">
+                        <option value="" selected=""></option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="Female" class="">Female</dd><dd lay-value="Male" class="">Male</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">出生年月</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="birthday" age="" lay-verify="limit" placeholder="选择年月" autocomplete="off" class="layui-input" label="Age">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">工作经验</label>
+                <div class="layui-input-inline">
+                    <select name="years" lay-filter="years" label="Career">
+                        <option value="" selected=""></option>
+                        <option value="Graduates">Graduates</option>
+                        <option value="Student">Student</option>
+                        <option value="1yrs Exp.">1yrs Exp.</option>
+                        <option value="2yrs Exp.">2yrs Exp.</option>
+                        <option value="3yrs Exp.">3yrs Exp.</option>
+                        <option value="4yrs Exp.">4yrs Exp.</option>
+                        <option value="5yrs Exp.">5yrs Exp.</option>
+                        <option value="6yrs Exp.">6yrs Exp.</option>
+                        <option value="7yrs Exp.">7yrs Exp.</option>
+                        <option value="8yrs Exp.">8yrs Exp.</option>
+                        <option value="9yrs Exp.">9yrs Exp.</option>
+                        <option value="10yrs Exp.">10yrs Exp.</option>
+                        <option value="10yrs More Exp.">10yrs more Exp.</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="Graduates" class="">Graduates</dd><dd lay-value="Student" class="">Student</dd><dd lay-value="1yrs Exp." class="">1yrs Exp.</dd><dd lay-value="2yrs Exp." class="">2yrs Exp.</dd><dd lay-value="3yrs Exp." class="">3yrs Exp.</dd><dd lay-value="4yrs Exp." class="">4yrs Exp.</dd><dd lay-value="5yrs Exp." class="">5yrs Exp.</dd><dd lay-value="6yrs Exp." class="">6yrs Exp.</dd><dd lay-value="7yrs Exp." class="">7yrs Exp.</dd><dd lay-value="8yrs Exp." class="">8yrs Exp.</dd><dd lay-value="9yrs Exp." class="">9yrs Exp.</dd><dd lay-value="10yrs Exp." class="">10yrs Exp.</dd><dd lay-value="10yrs More Exp." class="">10yrs more Exp.</dd></dl></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">手机号码</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="mobile" lay-verify="limit" autocomplete="off" placeholder="输入手机" class="layui-input" label="Phone">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">邮箱地址</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="email" lay-verify="email" autocomplete="off" placeholder="输入邮箱" class="layui-input" label="Email">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">学　　历</label>
+                <div class="layui-input-inline">
+                    <select name="edu" lay-filter="edu" label="Degree">
+                        <option value="" selected=""></option>
+                        <option value="College degree">College degree</option>
+                        <option value="Bachelor degree">Bachelor degree</option>
+                        <option value="Master degree">Master degree</option>
+                        <option value="Doctor degree">Doctor degree</option>
+                        <option value="Other degree">Other degree</option>
+                    </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="College degree" class="">College degree</dd><dd lay-value="Bachelor degree" class="">Bachelor degree</dd><dd lay-value="Master degree" class="">Master degree</dd><dd lay-value="Doctor degree" class="">Doctor degree</dd><dd lay-value="Other degree" class="">Other degree</dd></dl></div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">意向岗位</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="job" lay-verify="limit" autocomplete="off" placeholder="如：PM" class="layui-input" label="Job">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item baseinfo-more baseinfo-custom" style="display:none;"></div>
+        <div class="layui-form-item" style="text-align:center;padding-bottom:5px;">
+            <a id="baseinfo-add-btn" class="layui-btn layui-btn-primary layui-btn-sm"><i class="jlbfont icon-create" style="font-size:12px!important;"></i> 添加自定义字段</a>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block" style="margin-left:20px;width:600px;">
+                <select name="intro" lay-filter="intro">
+                    <option value="">一句话描述自己(选填)</option>
+                    <optgroup label="求职状态">
+                        <option value="未在职，目前正在找工作">未在职，目前正在找工作</option>
+                        <option value="目前在职，考虑合适新机会">目前在职，考虑合适新机会</option>
+                    </optgroup>
+                    <optgroup label="其他案例">
+                        <option value="做事滴水穿石，做人滴水不漏">做事滴水穿石，做人滴水不漏</option>
+                        <option value="有10人以上团队管理经验">有10人以上团队管理经验</option>
+                        <option value="全栈工程师，精通Hadoop技术栈">全栈工程师，精通Hadoop技术栈</option>
+                        <option value="个人博客：www.jianliben.com">个人博客：www.jianliben.com</option>
+                    </optgroup>
+                </select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="一句话描述自己(选填)" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit layui-select-group"><dd lay-value="" class="layui-select-tips">一句话描述自己(选填)</dd><dt>求职状态</dt><dd lay-value="未在职，目前正在找工作" class="">未在职，目前正在找工作</dd><dd lay-value="目前在职，考虑合适新机会" class="">目前在职，考虑合适新机会</dd><dt>其他案例</dt><dd lay-value="做事滴水穿石，做人滴水不漏" class="">做事滴水穿石，做人滴水不漏</dd><dd lay-value="有10人以上团队管理经验" class="">有10人以上团队管理经验</dd><dd lay-value="全栈工程师，精通Hadoop技术栈" class="">全栈工程师，精通Hadoop技术栈</dd><dd lay-value="个人博客：www.jianliben.com" class="">个人博客：www.jianliben.com</dd></dl></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style type="text/css">
+    .baseinfo-panel .layui-form-item{width: 645px;}
+    .baseinfo-panel .layui-form-item .layui-input-inline{display: inline-block;float: left;left: -1px;margin: 0px;width: 190px;}
+    .baseinfo-panel .layui-form-item .layui-inline{display: inline-block;margin: 0px 10px 5px 10px;width: 300px;clear: none;}
+    .baseinfo-panel .layui-form-label{text-align: left;color: #888;outline: 0;}
+    .baseinfo-panel .layui-form-select dl{max-height: 245px;}
+    .baseinfo-panel .layui-badge{height: 14px;line-height: 13px;padding: 0px 3px;position: absolute;right: -5px;top: 12px;cursor: pointer;border-radius: 8px;}
+    .baseinfo-panel .layui-badge:hover{opacity: 0.7;}
+    .baseinfo-panel .layui-form-radio{margin-left: 0px;}
+</style>
+<!-- baseinfo end -->    <!-- baseinfo end -->
+            <!-- recharge start -->
+        <!-- vip start -->
+<div id="vip-panel" style="display:none;">
+    <div id="vip-free" class="vip-item">
+        <div class="vip-info">
+            <div class="vip-title">免费用户</div>
+            <div class="vip-price"><b>免费</b></div>
+            <div class="vip-time">永久有效</div>
+        </div>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;图片下载：<font>5积分</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;PDF下载：<font>30积分</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;Word下载：<font>100积分</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;简历导入：<font>每天1次</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;模板切换：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;简历封面：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FF6363">ဆ</i> &nbsp;&nbsp;邮件附件：<font>不支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;智能证件照：<font>支持</font></p>
+    </div>
+    <div id="vip-month" class="vip-item" expire="2024年01月08日">
+        <div class="vip-corner"><i class="layui-icon"></i></div>
+        <div class="vip-info">
+            <div class="vip-title">基础VIP</div>
+            <div class="vip-price">¥ <b><font size="4">9.9</font></b></div>
+            <div class="vip-time">有效期：1个月</div>
+        </div>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;图片下载：<font>无限制</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;PDF下载：<font class="vip-pdfnum">每天20次</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60"></i> &nbsp;&nbsp;Word下载：<font class="vip-wordnum">每天20次</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;简历导入：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;模板切换：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;简历封面：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;邮件附件：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;智能证件照：<font>支持</font></p>
+    </div>
+    <!--<div id="vip-year" class="vip-item" expire="2024年12月08日">
+        <div class="vip-corner"><i class="layui-icon">&#xe605;</i></div>
+        <div class="vip-info">
+            <div class="vip-title">包年VIP</div>
+            <div class="vip-price">¥ <b><font size="4">19.9</font></b></div>
+            <div class="vip-time">有效期：1年</div>
+            <div class="vip-time">
+                <button class="layui-btn layui-btn-primary layui-btn-xs" value="1" expire="2024年01月08日">1个月</button>
+                <button class="layui-btn layui-btn-primary layui-btn-xs checked" value="3" expire="2024年03月08日">3个月</button>
+                <button class="layui-btn layui-btn-primary layui-btn-xs" value="6" expire="2024年06月08日">半年</button>
+                <button class="layui-btn layui-btn-primary layui-btn-xs" value="12" expire="2024年12月08日">一年</button>
+            </div>
+        </div>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;图片下载：<font>无限制</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60">&#xe605;</i> &nbsp;&nbsp;PDF下载：<font class="vip-pdfnum">每天20次</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#FFAC60">&#xe605;</i> &nbsp;&nbsp;Word下载：<font class="vip-wordnum">每天20次</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;简历导入：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;模板切换：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;简历封面：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;邮件附件：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C">&#xe605;</i> &nbsp;&nbsp;智能证件照：<font>支持</font></p>
+    </div>-->
+    <div id="vip-life" class="vip-item vip-item-curr">
+        <div class="vip-corner"><i class="layui-icon"></i></div>
+        <div class="vip-info">
+            <div class="vip-title">终身VIP</div>
+            <div class="vip-price">¥ <font size="4"><b>39.9</b></font></div>
+            <div class="vip-time">永久有效</div>
+        </div>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;图片下载：<font>无限制</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;PDF下载：<font>无限制</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;Word下载：<font>无限制</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;简历导入：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;模板切换：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;简历封面：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;邮件附件：<font>支持</font></p>
+        <p class="vip-power"><i class="layui-icon" style="color:#2DBD8C"></i> &nbsp;&nbsp;智能证件照：<font>支持</font></p>
+    </div>
+    <div class="vip-box-amount">
+        <span>合计金额：<font size="6" color="#FF832B"><b>39.9</b></font> 元</span>
+        <div class="vip-box-btn">
+            <button class="layui-btn pay-btn-wx" data-trace="common-pay-wxpay"><img src="./在线简历制作_简历本_files/jlbico_paywx.png"> 微信支付</button>
+            <button class="layui-btn pay-btn-ali" data-trace="common-pay-alipay"><img src="./在线简历制作_简历本_files/jlbico_payali.png"> 支付宝支付</button>
+            <!--<button class="layui-btn layui-btn-normal pay-btn-groupon" data-trace="common-pay-groupon">多人拼团</button>
+            <div class="tooltips" style="position:absolute;width:70px;height:20px;top:-26px;right:10px;line-height:20px;background:#555;border-radius:3px;margin-left:81px;color:#fff;font-size:12px;font-weight:300;">价格可减半<div class="arrow" style="position:absolute;width:0px;height:0px;line-height:0px;border-width:8px 5px 0px 5px;border-style:solid dashed dashed dashed;border-left-color:transparent;border-right-color:transparent;color:#555;bottom:-8px;right:42%;"></div></div>-->
+        </div>
+    </div>
+    <form name="vipForm" action="https://www.jianliben.com/payment/alipay" method="post" target="_blank">
+        <input type="hidden" value="vip" name="type">
+        <input type="hidden" value="39.9" name="amount">
+        <input type="hidden" value="简历本终身VIP" name="title">
+        <input type="hidden" value="vip-life" name="itemId">
+        <input type="hidden" value="1" name="time">
+    </form>
+</div>
+<!-- vip end -->
+<style>
+    #vip-panel{text-align: center;}
+    #vip-panel .vip-item{position:relative;width:235px;background:#F5F7FA;display:inline-block;margin: 0px 20px;border-radius: 5px;padding-bottom: 15px;cursor:pointer;overflow: hidden;box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);box-sizing: border-box;}
+    #vip-panel #vip-free{cursor: initial;}
+    #vip-panel .vip-item-curr{border:2px #667CFF solid;}
+    #vip-panel .vip-item .vip-title{font-size: 18px;font-weight: bold;}
+    #vip-panel .vip-item .vip-info{padding: 20px 0px;background: #C7D9F5;background: linear-gradient(148deg, #C7D9F5 0%, #B4CAEB 100%);line-height: 40px;color:#6E7B97;margin-bottom: 25px;}
+    #vip-panel #vip-month .vip-info{padding: 20px 0px;background: #61A0FE;background: linear-gradient(148deg, #53CDFF 0%, #61A0FE 100%);color:#105E8C;}
+    #vip-panel #vip-life .vip-info{padding: 20px 0px;background: #F9D29B;background: linear-gradient(148deg, #F9D29B 0%, #DFB172 100%);color:#794729;}
+    #vip-panel .vip-item .vip-time{background:#F5F7FA;width:60%;height:30px;line-height: 30px;text-align: center;font-size: 14px;margin: 5px auto;border-radius: 15px;}
+    #vip-panel .vip-time .layui-btn{border-radius: 10px;border-color: #F5F7FA;margin-top: -2px;background: #F5F7FA;}
+    #vip-panel .vip-time .layui-btn.checked{color: #fff;border-color: #61A0FE;background:#61A0FE;}
+    #vip-panel .vip-time .layui-btn+.layui-btn{margin-left: 5px;}
+    #vip-panel .vip-item .vip-corner{position: absolute;bottom: 0px;right: 0px;width: 0;height: 0;border-bottom: 30px solid transparent;border-left: 35px solid transparent;background:none;}
+    #vip-panel .vip-item-curr .vip-corner{border-bottom: 30px solid #667CFF;}
+    #vip-panel .vip-item .vip-corner i{color: transparent;position:absolute;top:13px;right:3px;font-size:15px;}
+    #vip-panel .vip-item-curr .vip-corner i{color: #fff;}
+    #vip-panel .vip-item .vip-power {margin: 12px auto;text-align: left;margin-left: 50px;color:#999;font-size: 12px;}
+    #vip-panel .vip-item .vip-power i{font-weight: bold;display: inline-block;vertical-align: middle;}
+    #vip-panel .vip-box-amount{width: 92%; height: 60px; margin:40px auto 10px auto;line-height: 60px;text-align: left;border-radius:5px;}
+    #vip-panel .vip-box-btn{text-align: center;float: right;}
+    #vip-panel .vip-box-btn button{width:138px;background: #667CFF;background: linear-gradient(324deg, #7C60FF 0%, #53CDFF 100%);}
+    #vip-panel .vip-box-btn button i{font-size: 20px;display: inline-block;vertical-align: middle;}
+    #vip-panel .vip-box-btn .pay-btn-wx{background: #2BC083;background: linear-gradient(120deg, #5DE7A8 0%, #2BC083 100%);margin-right:20px;}
+    #vip-panel .pay-btn-groupon{height: 30px;line-height: 30px;background-color: #FF5722!important;float:right;}
+    #vip-panel .pay-btn-groupon:hover{opacity: 0.8;}
+    #pay-state .pay-state{position: fixed; left: 50%; top: 250px; margin-left: -240px; padding:40px;width: 400px; height: auto; border: 1px solid gray; display: block; z-index: 1300; box-shadow: gray 0px 0px 10px; border-radius: 3px; background: white;color:#888;}
+    #pay-state .pay-failed{width: 150px;height: 40px;line-height: 40px;text-align: center;background: #bbb;color:#FFF;border-radius: 3px;float: left;cursor:pointer;}
+    #pay-state .pay-success{width: 150px;height: 40px;line-height: 40px;text-align: center;background: #bbb;border-radius: 3px;background:#00B6F4;color:#FFF;float: right; cursor:pointer;}
+</style>        <!-- recharge end -->
+        <!-- security start -->
+        <div id="security-panel" style="display: none;" class="">
+            <ul class="setting-content">
+                <li class="setting-item setting-item-resumeurl">
+                    <div class="setting-item-left">简历链接</div>
+                    <div class="setting-item-center"><a id="resume_url" href="https://www.jianliben.com/cv/2oejn" target="_blank">https://www.jianliben.com/cv/2oejn</a></div>
+                    <div class="setting-item-right"><a href="javascript:void(0);"><i class="jlbfont icon-copy" style="margin:1px;font-size:13px;cursor:pointer;"></i>复制链接</a></div>
+                </li>
+                <li class="setting-item setting-item-passwd" style="display:none;">
+                    <div class="setting-item-left">简历密码</div>
+                    <div class="setting-item-center"><span id="resume_passwd">w4cr</span></div>
+                    <div class="setting-item-right"><a href="javascript:void(0);" rel="nofollow"><i class="jlbfont icon-reload" style="margin:1px;font-size:12px;cursor:pointer;"></i>重置密码</a></div>
+                </li>
+                <li class="setting-item setting-item-resumesec">
+                    <div class="setting-item-left">查看权限</div>
+                    <div class="setting-item-center"></div>
+                    <div class="setting-item-right" id="resume_sec" val="2"></div>
+                    <div class="setting-item-bottom layui-form">
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline" style="width:225px">
+                                <input type="radio" name="sec" lay-filter="sec" value="3" title="密码查看"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>密码查看</div></div>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">需要使用密码查看简历</div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline" style="width:225px">
+                                <input type="radio" name="sec" lay-filter="sec" value="2" checked="" title="完全公开"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>完全公开</div></div>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">无需使用密码查看简历</div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-inline" style="width:225px">
+                                <input type="radio" name="sec" lay-filter="sec" value="1" title="完全保密"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>完全保密</div></div>
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">关闭简历链接查看权限</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- security end -->
+        <!-- evaluation start -->
+                <div id="evaluation" style="position:relative;padding-top:8px;width:950px;height:40px;background:#fff;text-align:center;font-size:14px;color:#888;margin:50px auto 0px auto;">
+            <div style="display:inline-block;vertical-align:middle;">对简历本的评价和建议：</div>
+            <div style="display:inline-block;position:relative;vertical-align:middle;margin-top:-1px;font-size:0px;" data-trace="editor-operate-evascore">
+                <div id="eva-scoretips" style="position:absolute;display:none;width:50px;height:20px;line-height:20px;background:#666;border-radius:3px;top:-30px;color:#fff;font-size:12px;">
+                    <span></span>
+                    <div class="arrow" style="position:absolute;width:0px;height:0px;line-height:0px;border-width:8px 5px 0px 5px;border-style:solid dashed dashed dashed;border-left-color:transparent;border-right-color:transparent;color:#666;bottom:-8px;right:42%;"></div>
+                </div>
+                <i class="layui-icon" eq="0"></i>
+                <i class="layui-icon" eq="1"></i>
+                <i class="layui-icon" eq="2"></i>
+                <i class="layui-icon" eq="3"></i>
+                <i class="layui-icon" eq="4"></i>
+            </div>
+            <div style="margin-left:20px;display:inline-block;vertical-align:middle;">
+                <input type="text" placeholder="填写您的宝贵建议" style="height:30px;padding:0px 5px;font-size:13px;width:180px;background:transparent;border:1px #ddd solid;border-radius:5px 0 0 5px;">
+            </div>
+            <a href="javascript:void(0);" rel="nofollow" class="eva-submit jlb-bg-b" style="display:inline-block;width:60px;height:32px;line-height:32px;margin-left:-5px;border-radius:0 5px 5px 0;color:#fff;font-size:14px;vertical-align:middle;" data-trace="editor-operate-evasubmit">提交</a>
+            <a href="javascript:void(0);" rel="nofollow" class="eva-close" style="position:absolute;right:15px;top:15px;font-size:16px;color:#999;" data-trace="editor-operate-evaclose"><font color="red">X</font></a>
+        </div>
+        <style>#evaluation i{font-size: 25px;vertical-align: middle;padding: 0px 8px;color:#ccc;cursor:pointer;}#eva-tips i:hover{color:#FFB800;cursor:pointer;}</style>
+                <!-- evaluation end -->
+        <form name="exportForm" style="display:none;" action="https://www.jianliben.com/export/download" method="get">
+            <input type="hidden" name="exp" value="">
+            <input type="hidden" name="sign" value="">
+            <input type="hidden" name="name" value="">
+        </form>
+        <script type="text/javascript" src="./在线简历制作_简历本_files/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="./在线简历制作_简历本_files/layui.js"></script>
+    <script type="text/javascript" src="./在线简历制作_简历本_files/global.js"></script>
+    <script>
+        layui.use(['layer', 'element', 'form']);
+        context.host   = 'https://www.jianliben.com/';
+        context.res    = 'https://static.jianliben.com/';
+        context.thumb  = 'https://thumb.jianliben.com/';
+        context.user   = '4198406';
+        context.tplid  = '101';
+        context.tplkey = 'tpl101';
+        context.tplcon = '';
+        context.theme  = '5E8EE0';
+        context.otheme = '5E8EE0';
+        context.resume = '4497827';
+        context.vip    = '';
+        context.cvlang = 'zh'||'zh';
+        context.tpllang= ''||'zh_en';
+        context.tplpage= '1'||'1';
+        context.cvnum  = '0';
+        context.page   = 'cv';
+    </script>
+    <script type="text/javascript" src="./在线简历制作_简历本_files/fish.all.js"></script>
+    <script type="text/javascript" src="./在线简历制作_简历本_files/resume.all.js"></script><div id="common-toolbar" unselectable="on" data-trace="editor-operate-editbar" style="display: none; visibility: visible; left: 629px; top: 1276px; z-index: 1;"><div id="toolbar-btn-bold-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-bold" unselectable="on" class="toolbar-btn" href="javascript:;" title="加粗">&nbsp;</a></div><div id="toolbar-btn-italic-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-italic" unselectable="on" class="toolbar-btn" href="javascript:;" title="斜体">&nbsp;</a></div><div id="toolbar-btn-underline-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-underline" unselectable="on" class="toolbar-btn" href="javascript:;" title="下划线">&nbsp;</a></div><div id="toolbar-btn-justifyLeft-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-justifyLeft" unselectable="on" class="toolbar-btn" href="javascript:;" title="左对齐">&nbsp;</a></div><div id="toolbar-btn-justifyCenter-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-justifyCenter" unselectable="on" class="toolbar-btn" href="javascript:;" title="剧中">&nbsp;</a></div><div id="toolbar-btn-justifyRight-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-justifyRight" unselectable="on" class="toolbar-btn" href="javascript:;" title="右对齐">&nbsp;</a></div><div id="toolbar-btn-insertUnorderedList-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-insertUnorderedList" unselectable="on" class="toolbar-btn" href="javascript:;" title="列表符号">&nbsp;</a></div><div id="toolbar-btn-insertOrderedList-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-insertOrderedList" unselectable="on" class="toolbar-btn" href="javascript:;" title="列表符号">&nbsp;</a></div><div id="toolbar-btn-createLink-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-createLink" unselectable="on" class="toolbar-btn" href="javascript:;" title="添加链接">&nbsp;</a></div><div id="toolbar-btn-unlink-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-unlink" unselectable="on" class="toolbar-btn" href="javascript:;" title="删除链接">&nbsp;</a></div><div style="clear: both;"></div><div id="toolbar-btn-foreColor-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-foreColor" unselectable="on" class="toolbar-btn" href="javascript:;" title="文字颜色">&nbsp;<i class="toolbar-btn-arrows"></i></a><div id="" class="toolbar-panel" style="display: none;"><table id="toolbar-btn-currtheme" cellspacing="0" cellpadding="0" style="width:100%;"><tbody><tr><td><input type="button" title="#5E8EE0" style="cursor:pointer;background-color:#5E8EE0;width:100%;height:20px;line-height:20px;font-size:12px;color:#fff;border-bottom:1px #868686 solid;" val="#5E8EE0" value="当前主题"></td></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td><input type="button" title="#5E8EE0" style="cursor:pointer;background-color:#5E8EE0" val="#5E8EE0"><input type="button" title="#1E6FAD" style="cursor:pointer;background-color:#1E6FAD" val="#1E6FAD"><input type="button" title="#F1CD2D" style="cursor:pointer;background-color:#F1CD2D" val="#F1CD2D"><input type="button" title="#254665" style="cursor:pointer;background-color:#254665" val="#254665"><input type="button" title="#54595C" style="cursor:pointer;background-color:#54595C" val="#54595C"><input type="button" title="#111111" style="cursor:pointer;background-color:#111111" val="#111111"></td></tr><tr><td><input type="button" title="#01BCB1" style="cursor:pointer;background-color:#01BCB1" val="#01BCB1"><input type="button" title="#019A89" style="cursor:pointer;background-color:#019A89" val="#019A89"><input type="button" title="#00A13C" style="cursor:pointer;background-color:#00A13C" val="#00A13C"><input type="button" title="#016866" style="cursor:pointer;background-color:#016866" val="#016866"><input type="button" title="#CEC078" style="cursor:pointer;background-color:#CEC078" val="#CEC078"><input type="button" title="#6B4B24" style="cursor:pointer;background-color:#6B4B24" val="#6B4B24"></td></tr><tr><td><input type="button" title="#FF9694" style="cursor:pointer;background-color:#FF9694" val="#FF9694"><input type="button" title="#D1001E" style="cursor:pointer;background-color:#D1001E" val="#D1001E"><input type="button" title="#93101F" style="cursor:pointer;background-color:#93101F" val="#93101F"><input type="button" title="#F06600" style="cursor:pointer;background-color:#F06600" val="#F06600"><input type="button" title="#F1CD2D" style="cursor:pointer;background-color:#F1CD2D" val="#F1CD2D"><input type="button" title="#9D57CA" style="cursor:pointer;background-color:#9D57CA" val="#9D57CA"></td></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td><input type="button" title="#000000" style="cursor:pointer;background-color:#000000" val="#000000"></td><td><input type="button" title="#000033" style="cursor:pointer;background-color:#000033" val="#000033"></td><td><input type="button" title="#000066" style="cursor:pointer;background-color:#000066" val="#000066"></td><td><input type="button" title="#000099" style="cursor:pointer;background-color:#000099" val="#000099"></td><td><input type="button" title="#0000BB" style="cursor:pointer;background-color:#0000BB" val="#0000BB"></td><td><input type="button" title="#0000FF" style="cursor:pointer;background-color:#0000FF" val="#0000FF"></td></tr><tr></tr><tr><td><input type="button" title="#006600" style="cursor:pointer;background-color:#006600" val="#006600"></td><td><input type="button" title="#006633" style="cursor:pointer;background-color:#006633" val="#006633"></td><td><input type="button" title="#006666" style="cursor:pointer;background-color:#006666" val="#006666"></td><td><input type="button" title="#006699" style="cursor:pointer;background-color:#006699" val="#006699"></td><td><input type="button" title="#0066BB" style="cursor:pointer;background-color:#0066BB" val="#0066BB"></td><td><input type="button" title="#0066FF" style="cursor:pointer;background-color:#0066FF" val="#0066FF"></td></tr><tr><td><input type="button" title="#009900" style="cursor:pointer;background-color:#009900" val="#009900"></td><td><input type="button" title="#009933" style="cursor:pointer;background-color:#009933" val="#009933"></td><td><input type="button" title="#009966" style="cursor:pointer;background-color:#009966" val="#009966"></td><td><input type="button" title="#009999" style="cursor:pointer;background-color:#009999" val="#009999"></td><td><input type="button" title="#0099BB" style="cursor:pointer;background-color:#0099BB" val="#0099BB"></td><td><input type="button" title="#0099FF" style="cursor:pointer;background-color:#0099FF" val="#0099FF"></td></tr><tr><td><input type="button" title="#00BB00" style="cursor:pointer;background-color:#00BB00" val="#00BB00"></td><td><input type="button" title="#00BB33" style="cursor:pointer;background-color:#00BB33" val="#00BB33"></td><td><input type="button" title="#00BB66" style="cursor:pointer;background-color:#00BB66" val="#00BB66"></td><td><input type="button" title="#00BB99" style="cursor:pointer;background-color:#00BB99" val="#00BB99"></td><td><input type="button" title="#00BBBB" style="cursor:pointer;background-color:#00BBBB" val="#00BBBB"></td><td><input type="button" title="#00BBFF" style="cursor:pointer;background-color:#00BBFF" val="#00BBFF"></td></tr><tr><td><input type="button" title="#00FF00" style="cursor:pointer;background-color:#00FF00" val="#00FF00"></td><td><input type="button" title="#00FF33" style="cursor:pointer;background-color:#00FF33" val="#00FF33"></td><td><input type="button" title="#00FF66" style="cursor:pointer;background-color:#00FF66" val="#00FF66"></td><td><input type="button" title="#00FF99" style="cursor:pointer;background-color:#00FF99" val="#00FF99"></td><td><input type="button" title="#00FFBB" style="cursor:pointer;background-color:#00FFBB" val="#00FFBB"></td><td><input type="button" title="#00FFFF" style="cursor:pointer;background-color:#00FFFF" val="#00FFFF"></td></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td><input type="button" title="#660000" style="cursor:pointer;background-color:#660000" val="#660000"></td><td><input type="button" title="#660033" style="cursor:pointer;background-color:#660033" val="#660033"></td><td><input type="button" title="#660066" style="cursor:pointer;background-color:#660066" val="#660066"></td><td><input type="button" title="#660099" style="cursor:pointer;background-color:#660099" val="#660099"></td><td><input type="button" title="#6600BB" style="cursor:pointer;background-color:#6600BB" val="#6600BB"></td><td><input type="button" title="#6600FF" style="cursor:pointer;background-color:#6600FF" val="#6600FF"></td></tr><tr></tr><tr><td><input type="button" title="#666600" style="cursor:pointer;background-color:#666600" val="#666600"></td><td><input type="button" title="#666633" style="cursor:pointer;background-color:#666633" val="#666633"></td><td><input type="button" title="#666666" style="cursor:pointer;background-color:#666666" val="#666666"></td><td><input type="button" title="#666699" style="cursor:pointer;background-color:#666699" val="#666699"></td><td><input type="button" title="#6666BB" style="cursor:pointer;background-color:#6666BB" val="#6666BB"></td><td><input type="button" title="#6666FF" style="cursor:pointer;background-color:#6666FF" val="#6666FF"></td></tr><tr><td><input type="button" title="#669900" style="cursor:pointer;background-color:#669900" val="#669900"></td><td><input type="button" title="#669933" style="cursor:pointer;background-color:#669933" val="#669933"></td><td><input type="button" title="#669966" style="cursor:pointer;background-color:#669966" val="#669966"></td><td><input type="button" title="#669999" style="cursor:pointer;background-color:#669999" val="#669999"></td><td><input type="button" title="#6699BB" style="cursor:pointer;background-color:#6699BB" val="#6699BB"></td><td><input type="button" title="#6699FF" style="cursor:pointer;background-color:#6699FF" val="#6699FF"></td></tr><tr><td><input type="button" title="#66BB00" style="cursor:pointer;background-color:#66BB00" val="#66BB00"></td><td><input type="button" title="#66BB33" style="cursor:pointer;background-color:#66BB33" val="#66BB33"></td><td><input type="button" title="#66BB66" style="cursor:pointer;background-color:#66BB66" val="#66BB66"></td><td><input type="button" title="#66BB99" style="cursor:pointer;background-color:#66BB99" val="#66BB99"></td><td><input type="button" title="#66BBBB" style="cursor:pointer;background-color:#66BBBB" val="#66BBBB"></td><td><input type="button" title="#66BBFF" style="cursor:pointer;background-color:#66BBFF" val="#66BBFF"></td></tr><tr><td><input type="button" title="#66FF00" style="cursor:pointer;background-color:#66FF00" val="#66FF00"></td><td><input type="button" title="#66FF33" style="cursor:pointer;background-color:#66FF33" val="#66FF33"></td><td><input type="button" title="#66FF66" style="cursor:pointer;background-color:#66FF66" val="#66FF66"></td><td><input type="button" title="#66FF99" style="cursor:pointer;background-color:#66FF99" val="#66FF99"></td><td><input type="button" title="#66FFBB" style="cursor:pointer;background-color:#66FFBB" val="#66FFBB"></td><td><input type="button" title="#66FFFF" style="cursor:pointer;background-color:#66FFFF" val="#66FFFF"></td></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td><input type="button" title="#FF0000" style="cursor:pointer;background-color:#FF0000" val="#FF0000"></td><td><input type="button" title="#FF0033" style="cursor:pointer;background-color:#FF0033" val="#FF0033"></td><td><input type="button" title="#FF0066" style="cursor:pointer;background-color:#FF0066" val="#FF0066"></td><td><input type="button" title="#FF0099" style="cursor:pointer;background-color:#FF0099" val="#FF0099"></td><td><input type="button" title="#FF00BB" style="cursor:pointer;background-color:#FF00BB" val="#FF00BB"></td><td><input type="button" title="#FF00FF" style="cursor:pointer;background-color:#FF00FF" val="#FF00FF"></td></tr><tr></tr><tr><td><input type="button" title="#FF6600" style="cursor:pointer;background-color:#FF6600" val="#FF6600"></td><td><input type="button" title="#FF6633" style="cursor:pointer;background-color:#FF6633" val="#FF6633"></td><td><input type="button" title="#FF6666" style="cursor:pointer;background-color:#FF6666" val="#FF6666"></td><td><input type="button" title="#FF6699" style="cursor:pointer;background-color:#FF6699" val="#FF6699"></td><td><input type="button" title="#FF66BB" style="cursor:pointer;background-color:#FF66BB" val="#FF66BB"></td><td><input type="button" title="#FF66FF" style="cursor:pointer;background-color:#FF66FF" val="#FF66FF"></td></tr><tr><td><input type="button" title="#FF9900" style="cursor:pointer;background-color:#FF9900" val="#FF9900"></td><td><input type="button" title="#FF9933" style="cursor:pointer;background-color:#FF9933" val="#FF9933"></td><td><input type="button" title="#FF9966" style="cursor:pointer;background-color:#FF9966" val="#FF9966"></td><td><input type="button" title="#FF9999" style="cursor:pointer;background-color:#FF9999" val="#FF9999"></td><td><input type="button" title="#FF99BB" style="cursor:pointer;background-color:#FF99BB" val="#FF99BB"></td><td><input type="button" title="#FF99FF" style="cursor:pointer;background-color:#FF99FF" val="#FF99FF"></td></tr><tr><td><input type="button" title="#FFBB00" style="cursor:pointer;background-color:#FFBB00" val="#FFBB00"></td><td><input type="button" title="#FFBB33" style="cursor:pointer;background-color:#FFBB33" val="#FFBB33"></td><td><input type="button" title="#FFBB66" style="cursor:pointer;background-color:#FFBB66" val="#FFBB66"></td><td><input type="button" title="#FFBB99" style="cursor:pointer;background-color:#FFBB99" val="#FFBB99"></td><td><input type="button" title="#FFBBBB" style="cursor:pointer;background-color:#FFBBBB" val="#FFBBBB"></td><td><input type="button" title="#FFBBFF" style="cursor:pointer;background-color:#FFBBFF" val="#FFBBFF"></td></tr><tr><td><input type="button" title="#FFFF00" style="cursor:pointer;background-color:#FFFF00" val="#FFFF00"></td><td><input type="button" title="#FFFF33" style="cursor:pointer;background-color:#FFFF33" val="#FFFF33"></td><td><input type="button" title="#FFFF66" style="cursor:pointer;background-color:#FFFF66" val="#FFFF66"></td><td><input type="button" title="#FFFF99" style="cursor:pointer;background-color:#FFFF99" val="#FFFF99"></td><td><input type="button" title="#FFFFBB" style="cursor:pointer;background-color:#FFFFBB" val="#FFFFBB"></td><td><input type="button" title="#FFFFFF" style="cursor:pointer;background-color:#FFFFFF" val="#FFFFFF"></td></tr><tr></tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tbody></table></div></div><div id="toolbar-btn-fontSize-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-fontSize" unselectable="on" class="toolbar-btn" href="javascript:;" title="字体大小">字号<i class="toolbar-btn-arrows"></i></a><div id="" class="toolbar-panel" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><a href="javascript:;" val="12px" style="font-size:12px">12</a></td></tr><tr><td><a href="javascript:;" val="13px" style="font-size:13px">13</a></td></tr><tr><td><a href="javascript:;" val="14px" style="font-size:14px">14</a></td></tr><tr><td><a href="javascript:;" val="15px" style="font-size:15px">15 <font style="font-size:12px;color:#aaa;" val="15">(默认)</font></a></td></tr><tr><td><a href="javascript:;" val="16px" style="font-size:16px">16</a></td></tr><tr><td><a href="javascript:;" val="18px" style="font-size:18px">18</a></td></tr><tr><td><a href="javascript:;" val="20px" style="font-size:20px">20</a></td></tr><tr><td><a href="javascript:;" val="24px" style="font-size:24px">24</a></td></tr><tr><td><a href="javascript:;" val="30px" style="font-size:30px">30</a></td></tr><tr><td><a href="javascript:;" val="36px" style="font-size:36px">36</a></td></tr></tbody></table></div></div><div id="toolbar-btn-fontName-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-fontName" unselectable="on" class="toolbar-btn" href="javascript:;" title="字体类型">字体<i class="toolbar-btn-arrows"></i></a><div id="" class="toolbar-panel" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><a href="javascript:;" val="STHeiti,SimHei" style="font-family:STHeiti,SimHei">黑体</a></td></tr><tr><td><a href="javascript:;" val="STSong,SimSun" style="font-family:STSong,SimSun">宋体</a></td></tr><tr><td><a href="javascript:;" val="STFangsong,FangSong" style="font-family:STFangsong,FangSong">仿宋</a></td></tr><tr><td><a href="javascript:;" val="STKaiti,KaiTi" style="font-family:STKaiti,KaiTi">楷体</a></td></tr><tr><td><a href="javascript:;" val="Microsoft YaHei" style="font-family:Microsoft YaHei">微软雅黑</a></td></tr><tr><td><a href="javascript:;" val="Helvetica Neue" style="font-family:Helvetica Neue">Helvetica <font style="font-size:12px;color:#aaa;" val="Helvetica Neue">(默认)</font></a></td></tr><tr><td><a href="javascript:;" val="Tahoma" style="font-family:Tahoma">Tahoma</a></td></tr><tr><td><a href="javascript:;" val="Georgia" style="font-family:Georgia">Georgia</a></td></tr><tr><td><a href="javascript:;" val="Arial" style="font-family:Arial">Arial</a></td></tr><tr><td><a href="javascript:;" val="Sans-serif" style="font-family:Sans-serif">Sans-serif</a></td></tr></tbody></table></div></div><div id="toolbar-btn-lineHeight-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-lineHeight" unselectable="on" class="toolbar-btn" href="javascript:;" title="段落行距">行距<i class="toolbar-btn-arrows"></i></a><div id="" class="toolbar-panel" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><a href="javascript:;" val="1.6em">1.0 倍 <font style="font-size:12px;color:#aaa;" val="1.6">(默认)</font></a></td></tr><tr><td><a href="javascript:;" val="1.7999999999999998em">1.2 倍</a></td></tr><tr><td><a href="javascript:;" val="2.1em">1.5 倍</a></td></tr><tr><td><a href="javascript:;" val="2.4em">1.8 倍</a></td></tr><tr><td><a href="javascript:;" val="2.6em">2.0 倍</a></td></tr><tr><td><a href="javascript:;" val="3.1em">2.5 倍</a></td></tr><tr><td><a href="javascript:;" val="3.6em">3.0 倍</a></td></tr><tr><td><a href="javascript:;" val="4.1em">3.5 倍</a></td></tr><tr><td><a href="javascript:;" val="4.6em">4.0 倍</a></td></tr></tbody></table></div></div><div id="toolbar-btn-specialChar-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-specialChar" unselectable="on" class="toolbar-btn" href="javascript:;" title="特殊字符">&nbsp;<i class="toolbar-btn-arrows"></i></a><div id="" class="toolbar-panel" style="display: none;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><a unselectable="on" href="javascript:;" val="➢">➢</a></td><td><a unselectable="on" href="javascript:;" val="➤">➤</a></td><td><a unselectable="on" href="javascript:;" val="★">★</a></td><td><a unselectable="on" href="javascript:;" val="●">●</a></td><td><a unselectable="on" href="javascript:;" val="◐">◐</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="◆">◆</a></td><td><a unselectable="on" href="javascript:;" val="◈">◈</a></td><td><a unselectable="on" href="javascript:;" val="■">■</a></td><td><a unselectable="on" href="javascript:;" val="♥">♥</a></td><td><a unselectable="on" href="javascript:;" val="▶">▶</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="①">①</a></td><td><a unselectable="on" href="javascript:;" val="②">②</a></td><td><a unselectable="on" href="javascript:;" val="③">③</a></td><td><a unselectable="on" href="javascript:;" val="④">④</a></td><td><a unselectable="on" href="javascript:;" val="⑤">⑤</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="⑥">⑥</a></td><td><a unselectable="on" href="javascript:;" val="⑦">⑦</a></td><td><a unselectable="on" href="javascript:;" val="⑧">⑧</a></td><td><a unselectable="on" href="javascript:;" val="⑨">⑨</a></td><td><a unselectable="on" href="javascript:;" val="⑩">⑩</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="Ⅰ">Ⅰ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅱ">Ⅱ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅲ">Ⅲ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅳ">Ⅳ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅴ">Ⅴ</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="Ⅵ">Ⅵ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅶ">Ⅶ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅷ">Ⅷ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅸ">Ⅸ</a></td><td><a unselectable="on" href="javascript:;" val="Ⅹ">Ⅹ</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="◎">◎</a></td><td><a unselectable="on" href="javascript:;" val="※">※</a></td><td><a unselectable="on" href="javascript:;" val="→">→</a></td><td><a unselectable="on" href="javascript:;" val="←">←</a></td><td><a unselectable="on" href="javascript:;" val="↑">↑</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="↓">↓</a></td><td><a unselectable="on" href="javascript:;" val="┆">┆</a></td><td><a unselectable="on" href="javascript:;" val="￣">￣</a></td><td><a unselectable="on" href="javascript:;" val="＿">＿</a></td><td><a unselectable="on" href="javascript:;" val="√">√</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="＋">＋</a></td><td><a unselectable="on" href="javascript:;" val="－">－</a></td><td><a unselectable="on" href="javascript:;" val="×">×</a></td><td><a unselectable="on" href="javascript:;" val="÷">÷</a></td><td><a unselectable="on" href="javascript:;" val="±">±</a></td></tr><tr><td><a unselectable="on" href="javascript:;" val="≤">≤</a></td><td><a unselectable="on" href="javascript:;" val="≥">≥</a></td><td><a unselectable="on" href="javascript:;" val="≠">≠</a></td><td><a unselectable="on" href="javascript:;" val="∵">∵</a></td><td><a unselectable="on" href="javascript:;" val="∴">∴</a></td></tr></tbody></table></div></div><div id="toolbar-btn-insertImage-wrap" class="toolbar-btn-wrap"><a id="toolbar-btn-insertImage" unselectable="on" class="toolbar-btn" href="javascript:;" title="插入图片">&nbsp;</a></div></div>
+    <script type="text/javascript">
+                //离开页面提示
+        window.onbeforeunload = function() {
+            if(context.user&&!context.hasSavedToServer&&!context.ieCreateResume) {
+                return '简历未保存';
+            }
+        };
+        $('#resume-paper img').each(function(){
+            if('avater-img'==$(this).attr('id')) {
+                $(this).attr('src', ($(this).attr('src')||'').replace('https://static.jianliben.com/images/', 'https://thumb.jianliben.com/'));
+            }else{
+                $(this).attr('src', ($(this).attr('src')||'').replace('https://static.jianliben.com/', 'https://thumb.jianliben.com/'));
+            }
+        });
+            </script>
+    <script src="./在线简历制作_简历本_files/hm.js"></script><script>
+var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?bfd87dea9059b488f43b541a46165fc9";
+	  var s = document.getElementsByTagName("script");
+	  s = s[s.length-1];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+
+<ul class="layui-fixbar"><li class="layui-icon" lay-type="bar1" style="background-color:#AAA"></li><li class="layui-icon layui-fixbar-top" lay-type="top" style="background-color: rgb(170, 170, 170); display: none;"></li></ul><div class="layui-layer-move"></div><div id="cv-view-panel" style="position:fixed;width:100%;top:0px;bottom:0px;background:rgba(0, 0, 0, 0.9);z-index:29891016;overflow:auto;"><div id="cv-view-panel-x" style="position:fixed;width:36px;height:36px;top:6px;right:25px;cursor:pointer;color:#f8f8f8;transition:.2s linear"><i class="layui-icon" style="font-size:36px;">ဆ</i></div><div id="content" lang="zh" style="margin: 15px auto; box-shadow: none;">
+                <div id="resume-paper">
+                    <table id="field-list" cellspacing="0" cellpadding="0" class="ui-sortable">     <tbody id="baseinfo" format="col" intro="未在职，目前正在找工作" colnum="gt8" class="ui-sortable">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">基本信息</div>                 </div>             </td>         </tr>         <tr>             <td class="field-value-td">                 <span class="field-value-span">                     <div id="avater-wrapper" data-show="show">                         <div id="avater-inner"><img id="avater-img" alt="简历头像" src="./在线简历制作_简历本_files/cv_photo_4497827.jpg"></div></div>                     <div id="baseinfo-panel-left"><span class="baseinfo-item baseinfo-fields"><span class="baseinfo-row"><span class="baseinfo-label">姓　　名：</span><span class="baseinfo-value editable" key="name">李彬彬</span></span><span class="baseinfo-row"><span class="baseinfo-label">性　　别：</span><span class="baseinfo-value editable" key="sex">女</span></span><span class="baseinfo-row"><span class="baseinfo-label">年　　龄：</span><span class="baseinfo-value editable" key="age" val="20岁" birthday="2003/06">20岁</span></span><span class="baseinfo-row"><span class="baseinfo-label">手　　机：</span><span class="baseinfo-value editable" key="mobile">15996103985</span></span><span class="baseinfo-row"><span class="baseinfo-label">邮　　箱：</span><span class="baseinfo-value editable" key="email">2603768621@qq.com</span></span><span class="baseinfo-row"><span class="baseinfo-label">学　　历：</span><span class="baseinfo-value editable" key="edu">本科</span></span><span class="baseinfo-row"><span class="baseinfo-label">政治面貌：</span><span class="baseinfo-value editable" key="polity">中共预备党员</span></span><span class="baseinfo-row"><span class="baseinfo-label">现居地址：</span><span class="baseinfo-value editable" key="address" val="苏州" sheng="江苏">江苏苏州</span></span><span class="baseinfo-row"><span class="baseinfo-label">英语等级：</span><span class="baseinfo-value editable" key="custom1">CET4</span></span><span class="baseinfo-row"><span class="baseinfo-label">奖学金　：</span><span class="baseinfo-value editable" key="custom2">校级一等、二等奖学金</span></span></span></div>                     <div id="baseinfo-panel-right">                     </div>                 </span>             </td>         </tr>     </tbody>                                         <tbody block="union-1" key="education" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">教育背景</div>                 </div>             <div class="block-tool-box"></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-three-column editable-left" lay-key="1">2021/09 - 2025/06</div>
+										<div class="editable editable-three-column editable-center ui-resizable"><div>江苏科技大学</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right editable-select ui-resizable"><div>本科 - 信息管理与信息系统</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column">
+											主修课程：高等数学、大学英语、演讲与口才、管理学、线性代数、.Net体系结构、数据库原理与应用、英语口语。<br>成绩排名：平均学分绩点:3.66，专业排名第一。</div>
+									<div class="field-tool-box"></div></span></td>         </tr>     </tbody><tbody block="union-1" key="practice" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">实践经历</div>                 </div>             <div class="block-tool-box"></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" lay-key="2">2022/03 - 2022/06</div>
+										<div class="editable editable-three-column editable-center ui-resizable"><div>第八届“LSCAT”江苏省笔译大赛</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable"><div>本科组&nbsp; 省二等奖</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column">主要内容：赛题考查汉英翻译能力，涉及经济、政治、文化、社会和生态文明建设等领域的重要话题。<div>实践收获：1、在打磨语言的过程中我得到了翻译能力的提升。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、在实践的过程中，开阔了眼界，获得了提升，面对繁杂的翻译内容，也能够不慌不乱去处理。<br></div></div>
+									<div class="field-tool-box"></div></span><span class="field-value-span" style="">
+										<div class="editable editable-three-column editable-left" lay-key="3">2023/09 - 2023/12</div>
+										<div class="editable editable-three-column editable-center ui-resizable"><div>全国大学生数学建模竞赛</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable"><div>江苏赛区&nbsp; 省三等奖</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column">主要内容：1、通过整理大量往年优秀论文编写好团队的一套论文模板。<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、通过浏览优秀论文内容总结论文书写的思路、组织语言的特点。<div>实践收获：1、能够撰写规定格式的论文，把亮点最明显地呈现；</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2、能够撰写达到美赛需求的英语文章。</div></div></div>
+									<div class="field-tool-box"></div></span></td>         </tr>     </tbody><tbody block="union-1" key="project" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">校园经历</div>                 </div>             <div class="block-tool-box"></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" lay-key="4">2023/09 - 至今</div>
+										<div class="editable editable-three-column editable-center ui-resizable"><div><br></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable"><div>班导师助理</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column">工作内容：负责了2023级学生报到、体检、军训、心理健康、生活、班风建设等全方面管理协调工作。<br></div>
+									<div class="field-tool-box"></div></span><span class="field-value-span" style="position: relative; top: 0px; left: 0px;">
+										<div class="editable editable-three-column editable-left" lay-key="5">2022/09 - 2023/09</div>
+										<div class="editable editable-three-column editable-center ui-resizable"><div><br></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-three-column editable-right ui-resizable"><div>图书馆馆长助理、读者协会会长</div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div></div>
+										<div class="editable editable-one-column">工作内容：负责了20余次校级活动的策划部署等工作。<br></div>
+									<div class="field-tool-box"></div></span></td>         </tr>     </tbody><tbody block="single-1" key="ability" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">专业技能</div>                 </div>             <div class="block-tool-box"></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-one-column">1、2022年校三好学生。&nbsp; &nbsp; &nbsp;2、2023年校三好学生。&nbsp; &nbsp; &nbsp;3、2022年志愿者服务先进个人。</div>
+									<div class="field-tool-box"></div></span></td>         </tr>     </tbody><tbody block="single-1" key="evaluation" class="ui-sortable" style="">         <tr>             <td class="field-title-td">                 <div class="field-title-wrap">                     <div class="editable">自我评价</div>                 </div>             <div class="block-tool-box"></div></td>         </tr>         <tr>             <td class="field-value-td"><span class="field-value-span" style="">
+										<div class="editable editable-one-column">
+											1、工作和团队适应能力：①大学期间作为协会会长、馆长助理、班导师助理。<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ②锻炼了面对复杂问题和突发情况的应急处理能力，以及多方协调能力。</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ③情绪稳定，善于沟通，并且具备个人心理调适能力、团队合作能力和动手能力。<div>2、技能储备和专业背景：多次组织并参加英语相关竞赛。</div></div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></div>
+									<div class="field-tool-box"></div></span></td>         </tr>     </tbody></table>                </div>
+            <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 960px; height: 1403px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div></div><span style="position:absolute;top:1358px;background:rgba(0, 0, 0, 0.9);color:#fff;font-size:12px;text-align:center;width:950px;left:50%;margin-left:-475px;height:4px;line-height:16px;"></span></div></body></html>
