@@ -30,7 +30,18 @@
         <p align="center">随机一言API网页接入，每刷新一下，随机更新一句话</p><br><br>
         <!-- class =“hitokoto ” 是一言的默认选择器-->
         <h3 class="hitokoto" id="yiyancon" align="center"></h3> 
-        <script type="text/javascript" src="https://international.v1.hitokoto.cn?encode=js&amp;charset=utf-8&amp;&amp;c=j&amp;c=k&amp;c=l"></script>
+        <script>
+              var xhr = new XMLHttpRequest();
+              xhr.open('get', 'https://v1.jinrishici.com/all.json');
+              xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                  var data = JSON.parse(xhr.responseText);
+                  var gushici = document.getElementById('gushici');
+                  gushici.innerText = data.content;
+                }
+              };
+              xhr.send();
+        </script>
         <br><br><br>
         <div style="text-align: right;">——2023.9.4&ensp; D_x记于苏州&ensp;&ensp; </div>
         <br><br>
