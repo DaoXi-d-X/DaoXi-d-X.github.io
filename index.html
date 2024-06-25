@@ -37,7 +37,18 @@
 	<div class="footerBar">
 		<!-- class =“hitokoto ” 是一言的默认选择器-->
         	<h3 class="hitokoto" id="yiyancon" align="center"></h3> 
-        	<script type="text/javascript" src="https://international.v1.hitokoto.cn?encode=js&amp;charset=utf-8&amp;&amp;c=j&amp;c=k&amp;c=l"></script>
+        	<script>
+			  var xhr = new XMLHttpRequest();
+			  xhr.open('get', 'https://v1.jinrishici.com/all.json');
+			  xhr.onreadystatechange = function () {
+			    if (xhr.readyState === 4) {
+			      var data = JSON.parse(xhr.responseText);
+			      var gushici = document.getElementById('gushici');
+			      gushici.innerText = data.content;
+			    }
+			  };
+			  xhr.send();
+		</script>
 	        <p align="center"><font color="red">
             For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source.<br/>
             商用请联系作者授权，非商用请注明出处。</font>
